@@ -1,0 +1,1168 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WZ.Model</name>
+    </assembly>
+    <members>
+        <member name="T:WZ.Model.User_InfoM">
+            <summary>
+            用户主表
+            </summary>
+        </member>
+        <member name="P:WZ.Model.User_InfoM.OpenIdentity">
+            <summary>
+            开通身份(位) 0:无任何身份 1:个人 2:店铺
+            </summary>
+        </member>
+        <member name="T:WZ.Model.Questionnaire_VoteM">
+            <summary>
+            问卷调查 投票表
+            </summary>
+        </member>
+        <member name="T:WZ.Model.QuestionnaireM">
+            <summary>
+            问卷调查主表
+            </summary>
+        </member>
+        <member name="P:WZ.Model.QuestionnaireM.ShowType">
+            <summary>
+            显示方式 0:复选框 1:单选框
+            </summary>
+        </member>
+        <member name="P:WZ.Model.QuestionnaireM.IsOpen">
+            <summary>
+            0:关闭 1:开户
+            </summary>
+        </member>
+        <member name="P:WZ.Model.QuestionnaireM.Item">
+            <summary>
+            暂时用不到
+            </summary>
+        </member>
+        <member name="T:WZ.Model.Pay_AttrM">
+            <summary>
+            支付方式属性
+            </summary>
+        </member>
+        <member name="P:WZ.Model.Pay_AttrM.AttrValue">
+            <summary>
+            支付宝账号
+            </summary>
+        </member>
+        <member name="T:WZ.Model.Log_SetUserMoneyM">
+            <summary>
+            Model
+            </summary>
+        </member>
+        <member name="T:WZ.Model.LinksM">
+            <summary>
+            Model
+            </summary>
+        </member>
+        <member name="P:WZ.Model.LinksM.LinksType">
+            <summary>
+            0:友情链接  1:合作伙伴
+            </summary>
+        </member>
+        <member name="P:WZ.Model.LinksM.ShowLocal">
+            <summary>
+            显示位置 1:显示在首页
+            </summary>
+        </member>
+        <member name="P:WZ.Model.LinksM.ShowType">
+            <summary>
+            显示方式 0:文字链接,1:图片链接
+            </summary>
+        </member>
+        <member name="T:WZ.Model.Questionnaire_MsgM">
+            <summary>
+            Model
+            </summary>
+        </member>
+        <member name="P:WZ.Model.Questionnaire_MsgM.Purview">
+            <summary>
+            0:未审核 1:通过审核 2:未通过审核
+            </summary>
+        </member>
+        <member name="T:WZ.Model.Log_SetUserExpM">
+            <summary>
+            Model
+            </summary>
+        </member>
+        <member name="T:WZ.Model.Gift_ClassM">
+            <summary>
+            礼品分类表
+            </summary>
+        </member>
+        <member name="T:WZ.Model.User_PersonalM">
+            <summary>
+            用户个人表
+            </summary>
+        </member>
+        <member name="P:WZ.Model.User_PersonalM.UserType">
+            <summary>
+            会员类型(对应订购产品A,B,C,D,E,F类)0=A 1=B 2=C 3=D 4=E 5=F 类 
+            </summary>
+        </member>
+        <member name="P:WZ.Model.User_PersonalM.FixTel">
+            <summary>
+            固定电话
+            </summary>
+        </member>
+        <member name="P:WZ.Model.User_PersonalM.UserMoney">
+            <summary>
+            会员预存款
+            </summary>
+        </member>
+        <member name="P:WZ.Model.User_PersonalM.UserFreezeMoney">
+            <summary>
+            会员冻结金额
+            </summary>
+        </member>
+        <member name="P:WZ.Model.User_PersonalM.UserExp">
+            <summary>
+            经验值
+            </summary>
+        </member>
+        <member name="T:WZ.Model.User_LetterM">
+            <summary>
+            用户站内信
+            </summary>
+        </member>
+        <member name="P:WZ.Model.User_LetterM.FK_User_From">
+            <summary>
+            发送方userid 若为0 则管理员
+            </summary>
+        </member>
+        <member name="P:WZ.Model.User_LetterM.FK_User_To">
+            <summary>
+            招收方userid 
+            </summary>
+        </member>
+        <member name="P:WZ.Model.User_LetterM.Detail">
+            <summary>
+            发送内容
+            </summary>
+        </member>
+        <member name="P:WZ.Model.User_LetterM.IsRead">
+            <summary>
+            是否已读 0未读 1:已读
+            </summary>
+        </member>
+        <member name="P:WZ.Model.User_LetterM.AddDate">
+            <summary>
+            发送日期
+            </summary>
+        </member>
+        <member name="T:WZ.Model.News_InfoM">
+            <summary>
+            新闻信息
+            </summary>
+        </member>
+        <member name="P:WZ.Model.News_InfoM.UrlType">
+            <summary>
+            页面链接类型 1:资讯页 2:独立页
+            </summary>
+        </member>
+        <member name="P:WZ.Model.News_InfoM.Title">
+            <summary>
+            主标题
+            </summary>
+        </member>
+        <member name="P:WZ.Model.News_InfoM.Title1">
+            <summary>
+            副标题
+            </summary>
+        </member>
+        <member name="P:WZ.Model.News_InfoM.NewsType">
+            <summary>
+            1:原创 2:转载
+            </summary>
+        </member>
+        <member name="P:WZ.Model.News_InfoM.Item">
+            <summary>
+            新闻属性 1:内页图文 2:幻灯片 4:内页推荐 8:公告 16:活动 32:首页推荐 64:首页图文
+            </summary>
+        </member>
+        <member name="T:WZ.Model.CaiPu_EvaluateM">
+            <summary>
+            菜谱评价
+            </summary>
+        </member>
+        <member name="P:WZ.Model.CaiPu_EvaluateM.Fraction">
+            <summary>
+            分数
+            </summary>
+        </member>
+        <member name="P:WZ.Model.CaiPu_EvaluateM.Purview">
+            <summary>
+            0:未审核 1:通过审核 2:未通过审核
+            </summary>
+        </member>
+        <member name="T:WZ.Model.News_ClassM">
+            <summary>
+            新闻分类
+            </summary>
+        </member>
+        <member name="T:WZ.Model.Log_SetUserLevelM">
+            <summary>
+            设置会员等级日志
+            </summary>
+        </member>
+        <member name="T:WZ.Model.Pro_UnitM">
+            <summary>
+            Model
+            </summary>
+        </member>
+        <member name="T:WZ.Model.Pro_MsgM">
+            <summary>
+            产品评论
+            </summary>
+        </member>
+        <member name="P:WZ.Model.Pro_MsgM.Purview">
+            <summary>
+            0:未审核 1:通过审核 2:未通过审核
+            </summary>
+        </member>
+        <member name="T:WZ.Model.Pro_EvaluateM">
+            <summary>
+            产品评价
+            </summary>
+        </member>
+        <member name="P:WZ.Model.Pro_EvaluateM.Fraction">
+            <summary>
+            分数
+            </summary>
+        </member>
+        <member name="P:WZ.Model.Pro_EvaluateM.Purview">
+            <summary>
+            0:未审核 1:通过审核 2:未通过审核
+            </summary>
+        </member>
+        <member name="T:WZ.Model.MsgM">
+            <summary>
+            网站留言
+            </summary>
+        </member>
+        <member name="P:WZ.Model.MsgM.FK_User">
+            <summary>
+            0:匿名留言 >0用户
+            </summary>
+        </member>
+        <member name="T:WZ.Model.Log_OrdM">
+            <summary>
+            订单日志
+            </summary>
+        </member>
+        <member name="T:WZ.Model.ReportM">
+            <summary>
+            举报信息
+            </summary>
+        </member>
+        <member name="T:WZ.Model.PPTM">
+            <summary>
+            幻灯片
+            </summary>
+        </member>
+        <member name="T:WZ.Model.Pay_InfoM">
+            <summary>
+            支付方式
+            </summary>
+        </member>
+        <member name="P:WZ.Model.Pay_InfoM.PayName">
+            <summary>
+            支付方式名称
+            </summary>
+        </member>
+        <member name="P:WZ.Model.Pay_InfoM.PayRate">
+            <summary>
+            支付费率
+            </summary>
+        </member>
+        <member name="P:WZ.Model.Pay_InfoM.Detail">
+            <summary>
+            介绍
+            </summary>
+        </member>
+        <member name="T:WZ.Model.Ord_InfoM">
+            <summary>
+            订单信息
+            </summary>
+        </member>
+        <member name="P:WZ.Model.Ord_InfoM.UserType">
+            <summary>
+            会员类型(对应订购产品A,B,C,D,E,F类)0=A 1=B 2=C 3=D 4=E 5=F 类 
+            </summary>
+        </member>
+        <member name="P:WZ.Model.Ord_InfoM.UserLevel">
+            <summary>
+            用户订购时的等级
+            </summary>
+        </member>
+        <member name="P:WZ.Model.Ord_InfoM.UserName">
+            <summary>
+            联系人姓名/公司名称
+            </summary>
+        </member>
+        <member name="P:WZ.Model.Ord_InfoM.RealName">
+            <summary>
+            联系人姓名/公司名称
+            </summary>
+        </member>
+        <member name="P:WZ.Model.Ord_InfoM.FixTel">
+            <summary>
+            固定电话
+            </summary>
+        </member>
+        <member name="P:WZ.Model.Ord_InfoM.Tel">
+            <summary>
+            手机
+            </summary>
+        </member>
+        <member name="P:WZ.Model.Ord_InfoM.Area">
+            <summary>
+            地区
+            </summary>
+        </member>
+        <member name="P:WZ.Model.Ord_InfoM.TotalPrice">
+            <summary>
+            订单总价格
+            </summary>
+        </member>
+        <member name="P:WZ.Model.Ord_InfoM.StatusCancelRemark">
+            <summary>
+            用户申请取消的备注
+            </summary>
+        </member>
+        <member name="P:WZ.Model.Ord_InfoM.Status">
+            <summary>
+            订单状态 10:已结算 20:已取消 30:已发货 40:确认收货  50:已完成
+            </summary>
+        </member>
+        <member name="P:WZ.Model.Ord_InfoM.StatusPay">
+            <summary>
+            支付状态 0:未付款 1:已付款 2:已预付
+            </summary>
+        </member>
+        <member name="P:WZ.Model.Ord_InfoM.Caption">
+            <summary>
+            用户符加信息
+            </summary>
+        </member>
+        <member name="P:WZ.Model.Ord_InfoM.Remark">
+            <summary>
+            网站方备注
+            </summary>
+        </member>
+        <member name="P:WZ.Model.Ord_InfoM.AddDate">
+            <summary>
+            订购时间
+            </summary>
+        </member>
+        <member name="P:WZ.Model.Ord_InfoM.AreaTime">
+            <summary>
+            配送时间(存储id,不是时间)
+            </summary>
+        </member>
+        <member name="P:WZ.Model.Ord_InfoM.ToMinTime">
+            <summary>
+            到货最小时间
+            </summary>
+        </member>
+        <member name="P:WZ.Model.Ord_InfoM.ToMaxTime">
+            <summary>
+            到货最大时间
+            </summary>
+        </member>
+        <member name="P:WZ.Model.Ord_InfoM.FK_AdminUser_PeiSong">
+            <summary>
+            配送人
+            </summary>
+        </member>
+        <member name="T:WZ.Model.CaiPu_ClassM">
+            <summary>
+            菜谱分类
+            </summary>
+        </member>
+        <member name="P:WZ.Model.CaiPu_ClassM.Item">
+            <summary>
+            1:显示首页
+            </summary>
+        </member>
+        <member name="P:WZ.Model.CaiPu_ClassM.IsShow">
+            <summary>
+            是否前台显示
+            </summary>
+        </member>
+        <member name="T:WZ.Model.A_Admin_User__GroupM">
+            <summary>
+            管理员与组关联
+            </summary>
+        </member>
+        <member name="T:WZ.Model.User_LevelM">
+            <summary>
+            会员等级类型
+            </summary>
+        </member>
+        <member name="P:WZ.Model.User_LevelM.LevelSN">
+            <summary>
+            如 1:1级(普通) 2:2级(高级)
+            </summary>
+        </member>
+        <member name="P:WZ.Model.User_LevelM.LevelType">
+            <summary>
+            0:普通零售会员等级 1:批发代理会员等级
+            </summary>
+        </member>
+        <member name="P:WZ.Model.User_LevelM.Percentage">
+            <summary>
+            折扣百分比 0-100
+            </summary>
+        </member>
+        <member name="P:WZ.Model.User_LevelM.IsDefault">
+            <summary>
+            是否默认会员 1:是 0:否
+            </summary>
+        </member>
+        <member name="P:WZ.Model.User_LevelM.LevelIntegral">
+            <summary>
+            积分
+            </summary>
+        </member>
+        <member name="T:WZ.Model.E_InStockM">
+            <summary>
+            入库记录
+            </summary>
+        </member>
+        <member name="P:WZ.Model.E_InStockM.FK_A_Admin_User_Job">
+            <summary>
+            负责人
+            </summary>
+        </member>
+        <member name="P:WZ.Model.E_InStockM.is_Type">
+            <summary>
+            入库类型 0:正常入库 1:损耗入库
+            </summary>
+        </member>
+        <member name="T:WZ.Model.Complaint_InfoM">
+            <summary>
+            投拆信息
+            </summary>
+        </member>
+        <member name="P:WZ.Model.Complaint_InfoM.FK_A_Admin_User">
+            <summary>
+            添加记录人
+            </summary>
+        </member>
+        <member name="P:WZ.Model.Complaint_InfoM.cp_TakeOver">
+            <summary>
+            接手客服
+            </summary>
+        </member>
+        <member name="P:WZ.Model.Complaint_InfoM.cp_Detail">
+            <summary>
+            投拆信息
+            </summary>
+        </member>
+        <member name="P:WZ.Model.Complaint_InfoM.cp_HandleResult">
+            <summary>
+            问题处理结果
+            </summary>
+        </member>
+        <member name="P:WZ.Model.Complaint_InfoM.cp_Status">
+            <summary>
+            0:未处理 1:处理中 2:已完成处理 3:取消处理
+            </summary>
+        </member>
+        <member name="P:WZ.Model.Complaint_InfoM.cp_AddDate_Complaint">
+            <summary>
+            客户投拆时间
+            </summary>
+        </member>
+        <member name="P:WZ.Model.Complaint_InfoM.cp_AddDate">
+            <summary>
+            记录添加时间
+            </summary>
+        </member>
+        <member name="T:WZ.Model.CaiPu_ProM">
+            <summary>
+            菜普对应产品列表
+            </summary>
+        </member>
+        <member name="P:WZ.Model.CaiPu_ProM.FK_CaiPu">
+            <summary>
+            菜谱id
+            </summary>
+        </member>
+        <member name="P:WZ.Model.CaiPu_ProM.FK_Pro">
+            <summary>
+            产品id
+            </summary>
+        </member>
+        <member name="T:WZ.Model.A_Admin_User__Pub_AreaM">
+            <summary>
+            管理员与区域关联(负责的区域)
+            </summary>
+        </member>
+        <member name="T:WZ.Model.Pro_PicTempM">
+            <summary>
+            Model
+            </summary>
+        </member>
+        <member name="T:WZ.Model.Pro_ClassM">
+            <summary>
+            产品分类
+            </summary>
+        </member>
+        <member name="P:WZ.Model.Pro_ClassM.Item">
+            <summary>
+            1:显示首页 2:首页栏目
+            </summary>
+        </member>
+        <member name="P:WZ.Model.Pro_ClassM.IsShow">
+            <summary>
+            是否前台显示
+            </summary>
+        </member>
+        <member name="T:WZ.Model.News_VoteM">
+            <summary>
+            Model
+            </summary>
+        </member>
+        <member name="T:WZ.Model.A_Group__FunM">
+            <summary>
+            组与功能关联表
+            </summary>
+        </member>
+        <member name="P:WZ.Model.A_Group__FunM.FK_A_Fun__SoleIdentifier">
+            <summary>
+            A_Fun 唯一标识符
+            </summary>
+        </member>
+        <member name="T:WZ.Model.A_FunM">
+            <summary>
+            功能表
+            </summary>
+        </member>
+        <member name="P:WZ.Model.A_FunM.ClassName">
+            <summary>
+            功能名称
+            </summary>
+        </member>
+        <member name="P:WZ.Model.A_FunM.f_SoleIdentifier">
+            <summary>
+            权限标识
+            </summary>
+        </member>
+        <member name="P:WZ.Model.A_FunM.f_FileName">
+            <summary>
+            功能文件路径 若没有可能为空
+            </summary>
+        </member>
+        <member name="P:WZ.Model.A_FunM.f_IsShowMenu">
+            <summary>
+            1:是否做为菜单显示
+            </summary>
+        </member>
+        <member name="P:WZ.Model.A_FunM.f_Detail">
+            <summary>
+            功能说明
+            </summary>
+        </member>
+        <member name="T:WZ.Model.Pub_SendThingM">
+            <summary>
+            送货方式
+            </summary>
+        </member>
+        <member name="P:WZ.Model.Pub_SendThingM.SendSN">
+            <summary>
+            送货方式
+            </summary>
+        </member>
+        <member name="T:WZ.Model.Ord_ProM">
+            <summary>
+            订单产品列表
+            </summary>
+        </member>
+        <member name="P:WZ.Model.Ord_ProM.op_ProPrice">
+            <summary>
+            产品价格
+            </summary>
+        </member>
+        <member name="P:WZ.Model.Ord_ProM.op_UserPrice">
+            <summary>
+            用户实际价格
+            </summary>
+        </member>
+        <member name="P:WZ.Model.Ord_ProM.op_UserTotalPrice">
+            <summary>
+            用户小计价格
+            </summary>
+        </member>
+        <member name="P:WZ.Model.Ord_ProM.op_Num">
+            <summary>
+            订购产品数量
+            </summary>
+        </member>
+        <member name="P:WZ.Model.Ord_ProM.op_ActualNum">
+            <summary>
+            实际发货数量
+            </summary>
+        </member>
+        <member name="P:WZ.Model.Ord_ProM.op_Status">
+            <summary>
+            分配状态  0:未分配置 1:已分配
+            </summary>
+        </member>
+        <member name="P:WZ.Model.Ord_ProM.op_StatusOutStock">
+            <summary>
+            出库状态 0:未出库 1:已出库 2:部分出库
+            </summary>
+        </member>
+        <member name="T:WZ.Model.A_GroupM">
+            <summary>
+            管理组
+            </summary>
+        </member>
+        <member name="P:WZ.Model.A_GroupM.g_Name">
+            <summary>
+            角色名称
+            </summary>
+        </member>
+        <member name="P:WZ.Model.A_GroupM.g_SoleIdentifier">
+            <summary>
+            唯一标识符
+            </summary>
+        </member>
+        <member name="T:WZ.Model.A_Admin_User__Pro_ClassM">
+            <summary>
+            管理员与产品分类(产品分类负责人)
+            </summary>
+        </member>
+        <member name="T:WZ.Model.User_ContactM">
+            <summary>
+            收货方联系信息
+            </summary>
+        </member>
+        <member name="P:WZ.Model.User_ContactM.ConSN">
+            <summary>
+            收货信息
+            </summary>
+        </member>
+        <member name="T:WZ.Model.Pro_LevelPriceM">
+            <summary>
+            会员等级对应产品价格表
+            </summary>
+        </member>
+        <member name="T:WZ.Model.E_NeedPurchaseM">
+            <summary>
+            需要采购的产品
+            </summary>
+        </member>
+        <member name="P:WZ.Model.E_NeedPurchaseM.FK_A_Admin_User_Job">
+            <summary>
+            负责人
+            </summary>
+        </member>
+        <member name="P:WZ.Model.E_NeedPurchaseM.np_InStockNum">
+            <summary>
+            已入库数量
+            </summary>
+        </member>
+        <member name="P:WZ.Model.E_NeedPurchaseM.np_Status">
+            <summary>
+            入库状态 0:未入库 1:已入库 2:部分入库 
+            </summary>
+        </member>
+        <member name="P:WZ.Model.E_NeedPurchaseM.np_Type">
+            <summary>
+            0:前台提交 1:手工提交
+            </summary>
+        </member>
+        <member name="T:WZ.Model.Vote_ClassM">
+            <summary>
+            Model
+            </summary>
+        </member>
+        <member name="P:WZ.Model.Vote_ClassM.Str">
+            <summary>
+            唯一值
+            </summary>
+        </member>
+        <member name="T:WZ.Model.Log_SetUserFreezeMoneyM">
+            <summary>
+            冻结金额日志
+            </summary>
+        </member>
+        <member name="T:WZ.Model.Pub_AreaM">
+            <summary>
+            共用省份城市
+            </summary>
+        </member>
+        <member name="T:WZ.Model.KeyWordM">
+            <summary>
+            Model
+            </summary>
+        </member>
+        <member name="P:WZ.Model.KeyWordM.Item">
+            <summary>
+            1:前台显示 2:显示在搜索框(商品) 4:显示在搜索框(食谱) 8:显示在搜索框(资讯)
+            </summary>
+        </member>
+        <member name="T:WZ.Model.CaiPu_ClassAttrInfoM">
+            <summary>
+            菜谱属性分类 值
+            </summary>
+        </member>
+        <member name="P:WZ.Model.CaiPu_ClassAttrInfoM.FK_Info_ClassAttr1">
+            <summary>
+            一级分类id
+            </summary>
+        </member>
+        <member name="P:WZ.Model.CaiPu_ClassAttrInfoM.FK_Info_ClassAttr2">
+            <summary>
+            二级分类id
+            </summary>
+        </member>
+        <member name="T:WZ.Model.WebInfoM">
+            <summary>
+            网站内容,如广告
+            </summary>
+        </member>
+        <member name="P:WZ.Model.WebInfoM.InfoName">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:WZ.Model.WebInfoM.Detail">
+            <summary>
+            内容
+            </summary>
+        </member>
+        <member name="P:WZ.Model.WebInfoM.StartTime">
+            <summary>
+            放置开始时间
+            </summary>
+        </member>
+        <member name="P:WZ.Model.WebInfoM.EndTime">
+            <summary>
+            放置结束时间
+            </summary>
+        </member>
+        <member name="T:WZ.Model.CaiPu_MsgM">
+            <summary>
+            菜谱评论
+            </summary>
+        </member>
+        <member name="P:WZ.Model.CaiPu_MsgM.Purview">
+            <summary>
+            0:未审核 1:通过审核 2:未通过审核
+            </summary>
+        </member>
+        <member name="T:WZ.Model.CaiPu_InfoM">
+            <summary>
+            菜普
+            </summary>
+        </member>
+        <member name="P:WZ.Model.CaiPu_InfoM.FK_Join">
+            <summary>
+            公司/商家表ID
+            </summary>
+        </member>
+        <member name="P:WZ.Model.CaiPu_InfoM.Price">
+            <summary>
+            销售价格
+            </summary>
+        </member>
+        <member name="P:WZ.Model.CaiPu_InfoM.PriceMarket">
+            <summary>
+            市场价
+            </summary>
+        </member>
+        <member name="P:WZ.Model.CaiPu_InfoM.PriceCost">
+            <summary>
+            成本价
+            </summary>
+        </member>
+        <member name="P:WZ.Model.CaiPu_InfoM.Unit">
+            <summary>
+            计量单位
+            </summary>
+        </member>
+        <member name="P:WZ.Model.CaiPu_InfoM.SellN">
+            <summary>
+            此产品销售次数
+            </summary>
+        </member>
+        <member name="P:WZ.Model.CaiPu_InfoM.SellN1">
+            <summary>
+            此产品销售总量
+            </summary>
+        </member>
+        <member name="P:WZ.Model.CaiPu_InfoM.Detail1">
+            <summary>
+            描述,教程,适用人群
+            </summary>
+        </member>
+        <member name="P:WZ.Model.CaiPu_InfoM.ProIsHas">
+            <summary>
+            0:上架 1:下架
+            </summary>
+        </member>
+        <member name="P:WZ.Model.CaiPu_InfoM.Item">
+            <summary>
+            产品属性
+            </summary>
+        </member>
+        <member name="T:WZ.Model.Pro_PicM">
+            <summary>
+            产品图片列表
+            </summary>
+        </member>
+        <member name="P:WZ.Model.Pro_PicM.FK_Pro">
+            <summary>
+            产品表id
+            </summary>
+        </member>
+        <member name="T:WZ.Model.Join_InfoM">
+            <summary>
+            供应商
+            </summary>
+        </member>
+        <member name="P:WZ.Model.Join_InfoM.JoinName">
+            <summary>
+            商家名称
+            </summary>
+        </member>
+        <member name="P:WZ.Model.Join_InfoM.JoinType">
+            <summary>
+            商家 1:批发商 0:菜蓝子
+            </summary>
+        </member>
+        <member name="P:WZ.Model.Join_InfoM.SupplyProduct">
+            <summary>
+            供应产品
+            </summary>
+        </member>
+        <member name="P:WZ.Model.Join_InfoM.Detail">
+            <summary>
+            商家介绍/说明
+            </summary>
+        </member>
+        <member name="P:WZ.Model.Join_InfoM.FixTel">
+            <summary>
+            固定电话
+            </summary>
+        </member>
+        <member name="T:WZ.Model.E_OutStockM">
+            <summary>
+            出库记录
+            </summary>
+        </member>
+        <member name="P:WZ.Model.E_OutStockM.FK_A_Admin_User_Job">
+            <summary>
+            负责人
+            </summary>
+        </member>
+        <member name="P:WZ.Model.E_OutStockM.os_Type">
+            <summary>
+            出库类型 0:正常出库 1:损耗出库
+            </summary>
+        </member>
+        <member name="T:WZ.Model.Help_ClassM">
+            <summary>
+            帮助分类
+            </summary>
+        </member>
+        <member name="P:WZ.Model.Help_ClassM.Str">
+            <summary>
+            别名
+            </summary>
+        </member>
+        <member name="T:WZ.Model.Gift_InfoM">
+            <summary>
+            礼品
+            </summary>
+        </member>
+        <member name="P:WZ.Model.Gift_InfoM.Integral">
+            <summary>
+            所需积分
+            </summary>
+        </member>
+        <member name="P:WZ.Model.Gift_InfoM.ExchangeN">
+            <summary>
+            兑换次数
+            </summary>
+        </member>
+        <member name="P:WZ.Model.Gift_InfoM.Item">
+            <summary>
+            1:推荐
+            </summary>
+        </member>
+        <member name="P:WZ.Model.Gift_InfoM.StockN">
+            <summary>
+            库存
+            </summary>
+        </member>
+        <member name="T:WZ.Model.A_DepartmentM">
+            <summary>
+            Model
+            </summary>
+        </member>
+        <member name="T:WZ.Model.WebConfigM">
+            <summary>
+            网站配置
+            </summary>
+        </member>
+        <member name="P:WZ.Model.WebConfigM.Str">
+            <summary>
+            唯一标识符
+            </summary>
+        </member>
+        <member name="P:WZ.Model.WebConfigM.ConfigName">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:WZ.Model.WebConfigM.Detail">
+            <summary>
+            内容
+            </summary>
+        </member>
+        <member name="P:WZ.Model.WebConfigM.IsShowFCK">
+            <summary>
+            是否用fck编辑内容 0:否 1:是
+            </summary>
+        </member>
+        <member name="T:WZ.Model.Pro_InfoM">
+            <summary>
+            产品信息
+            </summary>
+        </member>
+        <member name="P:WZ.Model.Pro_InfoM.FK_Join">
+            <summary>
+            公司/商家表ID
+            </summary>
+        </member>
+        <member name="P:WZ.Model.Pro_InfoM.JoinType">
+            <summary>
+            0:菜篮子 1:商家
+            </summary>
+        </member>
+        <member name="P:WZ.Model.Pro_InfoM.Price">
+            <summary>
+            销售价格
+            </summary>
+        </member>
+        <member name="P:WZ.Model.Pro_InfoM.Price1">
+            <summary>
+            秒杀,促销价
+            </summary>
+        </member>
+        <member name="P:WZ.Model.Pro_InfoM.Price2">
+            <summary>
+            企业价
+            </summary>
+        </member>
+        <member name="P:WZ.Model.Pro_InfoM.Price3">
+            <summary>
+            暂无
+            </summary>
+        </member>
+        <member name="P:WZ.Model.Pro_InfoM.Price4">
+            <summary>
+            暂无
+            </summary>
+        </member>
+        <member name="P:WZ.Model.Pro_InfoM.PriceMarket">
+            <summary>
+            市场价
+            </summary>
+        </member>
+        <member name="P:WZ.Model.Pro_InfoM.PriceCost">
+            <summary>
+            成本价
+            </summary>
+        </member>
+        <member name="P:WZ.Model.Pro_InfoM.Unit">
+            <summary>
+            计量单位
+            </summary>
+        </member>
+        <member name="P:WZ.Model.Pro_InfoM.SellN">
+            <summary>
+            此产品销售次数
+            </summary>
+        </member>
+        <member name="P:WZ.Model.Pro_InfoM.SellN1">
+            <summary>
+            此产品销售总量
+            </summary>
+        </member>
+        <member name="P:WZ.Model.Pro_InfoM.Detail1">
+            <summary>
+            描述,教程,适用人群
+            </summary>
+        </member>
+        <member name="P:WZ.Model.Pro_InfoM.ProIsHas">
+            <summary>
+            0:上架 1:下架
+            </summary>
+        </member>
+        <member name="P:WZ.Model.Pro_InfoM.Item">
+            <summary>
+            产品属性
+            </summary>
+        </member>
+        <member name="P:WZ.Model.Pro_InfoM.MS_StartTime">
+            <summary>
+            秒杀开始时间
+            </summary>
+        </member>
+        <member name="P:WZ.Model.Pro_InfoM.MS_EndTime">
+            <summary>
+            秒杀结束时间
+            </summary>
+        </member>
+        <member name="T:WZ.Model.Ord_StatusM">
+            <summary>
+            订单状态
+            </summary>
+        </member>
+        <member name="T:WZ.Model.Help_InfoM">
+            <summary>
+            帮助信息
+            </summary>
+        </member>
+        <member name="P:WZ.Model.Help_InfoM.Item">
+            <summary>
+            1:显示底部
+            </summary>
+        </member>
+        <member name="T:WZ.Model.A_Admin_UserM">
+            <summary>
+            管理员表
+            </summary>
+        </member>
+        <member name="P:WZ.Model.A_Admin_UserM.FK_A_Department">
+            <summary>
+            部门id
+            </summary>
+        </member>
+        <member name="P:WZ.Model.A_Admin_UserM.au_WorkNumber">
+            <summary>
+            工号
+            </summary>
+        </member>
+        <member name="P:WZ.Model.A_Admin_UserM.au_Name">
+            <summary>
+            管理员用户名
+            </summary>
+        </member>
+        <member name="P:WZ.Model.A_Admin_UserM.au_Password">
+            <summary>
+            管理员密码
+            </summary>
+        </member>
+        <member name="P:WZ.Model.A_Admin_UserM.au_RealName">
+            <summary>
+            姓名
+            </summary>
+        </member>
+        <member name="P:WZ.Model.A_Admin_UserM.au_AddTime">
+            <summary>
+            添加时间
+            </summary>
+        </member>
+        <member name="P:WZ.Model.A_Admin_UserM.au_LoginN">
+            <summary>
+            登录次数
+            </summary>
+        </member>
+        <member name="P:WZ.Model.A_Admin_UserM.au_LastIP">
+            <summary>
+            最后登录IP
+            </summary>
+        </member>
+        <member name="P:WZ.Model.A_Admin_UserM.au_LastTime">
+            <summary>
+            最后登录时间
+            </summary>
+        </member>
+        <member name="P:WZ.Model.A_Admin_UserM.au_ThingStatus">
+            <summary>
+            0:正常 1:请假 2:出差 3:其它....
+            </summary>
+        </member>
+        <member name="P:WZ.Model.A_Admin_UserM.au_Status">
+            <summary>
+            管理员状态 0:正常 1:禁用
+            </summary>
+        </member>
+        <member name="P:WZ.Model.A_Admin_UserM.au_Integral">
+            <summary>
+            管理员积分
+            </summary>
+        </member>
+        <member name="P:WZ.Model.A_Admin_UserM.au_Level">
+            <summary>
+            管理员等级
+            </summary>
+        </member>
+        <member name="T:WZ.Model.User_CartM">
+            <summary>
+            购物车
+            </summary>
+        </member>
+        <member name="P:WZ.Model.User_CartM.FK_All">
+            <summary>
+            产品id,营养套餐id 等都可以
+            </summary>
+        </member>
+        <member name="T:WZ.Model.News_MsgM">
+            <summary>
+            新闻评论
+            </summary>
+        </member>
+        <member name="P:WZ.Model.News_MsgM.Purview">
+            <summary>
+            0:未审核 1:通过审核 2:未通过审核
+            </summary>
+        </member>
+        <member name="T:WZ.Model.Deliver_InfoM">
+            <summary>
+            送货方式
+            </summary>
+        </member>
+        <member name="T:WZ.Model.User_FavM">
+            <summary>
+            用户收藏
+            </summary>
+        </member>
+        <member name="P:WZ.Model.User_FavM.InfoType">
+            <summary>
+            0:产品 1:菜谱 2:套餐
+            </summary>
+        </member>
+        <member name="T:WZ.Model.Log_SetUserIntegralM">
+            <summary>
+            设置会员积分日志
+            </summary>
+        </member>
+        <member name="T:WZ.Model.E_BookProM">
+            <summary>
+            预订产品库
+            </summary>
+        </member>
+        <member name="T:WZ.Model.CaiPu_ClassAttrM">
+            <summary>
+            菜谱属性分类
+            </summary>
+        </member>
+        <member name="P:WZ.Model.CaiPu_ClassAttrM.IsDel">
+            <summary>
+            可否删除 0:可以删除 1:不能删除
+            </summary>
+        </member>
+    </members>
+</doc>

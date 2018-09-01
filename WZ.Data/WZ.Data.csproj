@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6B806F57-F892-49CC-B7A6-80575C9296FC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WZ.Data</RootNamespace>
+    <AssemblyName>WZ.Data</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\other_dll\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Activity_InfoL.cs" />
+    <Compile Include="AjaxHandle\PubClass.cs" />
+    <Compile Include="CenterHandler\cs1.cs" />
+    <Compile Include="ClientAction\BanCache.cs" />
+    <Compile Include="Bind.cs" />
+    <Compile Include="Bind1.cs" />
+    <Compile Include="ClassData.cs" />
+    <Compile Include="ClassPath.cs" />
+    <Compile Include="ClassTree.cs" />
+    <Compile Include="ClientAction\BanData.cs" />
+    <Compile Include="DataItem\ItemInfoData.cs" />
+    <Compile Include="EmailInfo.cs" />
+    <Compile Include="IntegralHandler.cs" />
+    <Compile Include="Layout\DataRowEvent.cs" />
+    <Compile Include="FnData.cs" />
+    <Compile Include="GetClassPath.cs" />
+    <Compile Include="GetClassTree.cs" />
+    <Compile Include="GetURL.cs" />
+    <Compile Include="IData\AbsClassRecursive.cs" />
+    <Compile Include="IData\AbsClassTreeRecursive.cs" />
+    <Compile Include="IData\AbsPay.cs" />
+    <Compile Include="IData\IClassPath.cs" />
+    <Compile Include="IData\IClassTree.cs" />
+    <Compile Include="IData\IPay.cs" />
+    <Compile Include="Layout\LayoutInfo.cs" />
+    <Compile Include="Layout\LinkLay.cs" />
+    <Compile Include="Layout\ProLay.cs" />
+    <Compile Include="Layout\CaiPuLay.cs" />
+    <Compile Include="Log_OrdL.cs" />
+    <Compile Include="Log_SetUserIntegralL.cs" />
+    <Compile Include="Log_SetUserLevelL.cs" />
+    <Compile Include="Log_SetUserMoneyL.cs" />
+    <Compile Include="Merge\Ord_Merge.cs" />
+    <Compile Include="Ord_InfoL.cs" />
+    <Compile Include="Ord_ProL.cs" />
+    <Compile Include="PagingList.cs" />
+    <Compile Include="Pay_AttrL.cs" />
+    <Compile Include="Pay_Attr_yh.cs" />
+    <Compile Include="Pay_Attr_zfb.cs" />
+    <Compile Include="PriceHandler.cs" />
+    <Compile Include="PubData.cs" />
+    <Compile Include="PubSQL.cs" />
+    <Compile Include="Pub_Number.cs" />
+    <Compile Include="Questionnaire_LogM.cs" />
+    <Compile Include="SqlData.cs" />
+    <Compile Include="SqlDataSelect.cs" />
+    <Compile Include="User_CardL.cs" />
+    <Compile Include="User_CartL.cs" />
+    <Compile Include="User_ContactL.cs" />
+    <Compile Include="User_FractL.cs" />
+    <Compile Include="User_InfoL.cs" />
+    <Compile Include="User_LevelL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="GetClassPath1.cs" />
+    <Compile Include="Log_SetUserFreezeMoneyL.cs" />
+    <Compile Include="DataItem\ItemHandle.cs" />
+    <Compile Include="DataItem\ItemInfo.cs" />
+    <Compile Include="SqlData1.cs" />
+    <Compile Include="Log_SetUserExpL.cs" />
+    <Compile Include="User_Ticket_1L.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAL\WZ.DAL.csproj">
+      <Project>{FA8CF8B8-A16F-4F3A-81E4-D0310A213D31}</Project>
+      <Name>WZ.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WZ.Common\WZ.Common.csproj">
+      <Project>{83966E9F-1879-41A8-9213-B914C721A5E3}</Project>
+      <Name>WZ.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WZ.Model\WZ.Model.csproj">
+      <Project>{41046F50-11B4-486F-9844-20B8142588F0}</Project>
+      <Name>WZ.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

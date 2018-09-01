@@ -1,0 +1,89 @@
+
+.flow-steps,.flow-steps-2,.flow-steps-3 { height:57px; background:url(../images/shopping/Flow.gif) no-repeat; margin:10px 0 20px 0;}
+
+/*  购物车  */
+.flow-steps { background-position: center 0;}
+.cart { padding-bottom:10px;}
+	.cart h2 { height:26px; background:#ccc url(../images/shopping/title.gif) no-repeat 0 -26px;}
+	.cart table td.s-pic,.cart table td.s-point,.cart table td.s-price,.cart table td.s-amount,.cart table td.s-total,.cart table td.s-del { text-align:center;}
+	.cart table td.s-pic,.cart table td.s-title,.cart table td.s-point,.cart table td.s-price,.cart table td.s-amount,.cart table td.s-total,.cart table td.s-del { color:#999; padding:5px 0;}
+	.cart table td.s-pic { width:70px;}
+	.cart table td.s-title { width:335px; padding-left:15px;}
+	.cart table td.s-point { width:100px;}
+	.cart table td.s-price { width:100px;}
+	.cart table td.s-amount { width:120px;}
+	.cart table td.s-total { width:100px;}
+	.cart table td.s-del { width:110px;}
+	.products-img { margin:0 auto; display:block; width:46px; height:46px; border:#ddd solid 1px; padding:1px;}
+	.products-img:hover { border:#ff6600 solid 1px;}
+	.text-amount { width:30px; height:20px; line-height:20px; text-align:center;}
+	.cart em { color:#cd2a23; font-weight:bold; font-style:normal}
+.tr-bg { background:#f7f7f7;}
+.charge-info { margin-top:10px; height:30px; line-height:30px; border-bottom:#ccc solid 1px; border-top:#ccc solid 1px; padding-right:10px}
+.charge-info p { float:right; margin-left:50px}
+.charge-info strong { color:#cd2a23; font-weight:bold; font-size:14px;}
+.clearfix { height:28px; padding-top:10px;}
+.clearfix .go { float:right;}
+.note { height:40px; line-height:40px; border-bottom:#ccc solid 1px;}
+.msg { padding-top:15px; padding-bottom:20px;}
+.msg h5 { font-weight:bold;}
+.msg p { color:#999; padding-left:20px; line-height:30px;}
+.Also-buy { padding-bottom:40px;}
+.Also-buy h2 { height:26px; background:#ccc url(../images/shopping/title.gif) no-repeat;}
+
+ /*  还购买了  */
+.calss-center { float:left; width:940px; padding-top:10px; padding-left:10px;} 
+	.calss-center li { float:left; width:109px; padding:5px 12px;}
+	.calss-center p { display:block; text-align:center; background:#f3f4f4;}
+		.calss-center li a { color:#38922c; font-weight:bold;}
+		.calss-center li a:hover { color:#ff6600;}
+
+ /*  填写订单信息  */
+.Filling { padding-bottom:10px;}
+.Filling h2 { height:26px; background:#ccc url(../images/shopping/title.gif) no-repeat 0 -52px;}
+.flow-steps-2 { background-position: center -57px;}
+.Filling p { padding:15px; color:#333;}
+.Filling p em { font-weight:bold;}
+.logintable2 { width:880px; padding-bottom:20px; padding-left:70px;}
+.logintable2 td { padding:8px 1px; line-height:16px; color:#666;}
+.logintable2 td span { color:#f00; padding:0 5px;}
+.logintable2 td em { color:#999;} 
+.loginleft { width:120px; text-align:right;}
+.loginleft-top { padding-top:11px !important;}
+.loginleft2 { width:130px; text-align:right;}
+.Region { height:25px;}
+.Filling h3 { height:26px; background:#ccc url(../images/shopping/title.gif) no-repeat 0 -78px;}
+.Payment { width:80px; text-align:right; padding-right:50px !important;}
+.Paymenttable { padding-top:20px;}
+.sun { padding-top:30px; text-align:center;}
+
+ /*  确认订单信息  */
+.loginright { color:#333 !important;}
+.Filling h4 { height:26px; background:#ccc url(../images/shopping/title.gif) no-repeat 0 -104px;}
+.Coupon { padding-top:15px;}
+.Coupon li { text-align:center; padding:8px 0;}
+.sun2 { padding:15px 70px 15px 0; text-align:right;}
+.sun2 em { color:#f36200;}
+.sun2 span { color:#f36200; font-size:24px; font-family:Georgia, "Times New Roman", Times, serif;}
+
+ /*  提交订单完成  */
+.flow-steps-3 { background-position: center -114px;}
+.Completion { padding-bottom:20px;}
+.Completion p { text-align:center; padding:0; color:#666;}
+.gx { height:50px; padding-bottom:10px !important;}
+.Co-txt { height:30px; line-height:30px;}
+
+
+
+/*修改*/
+.paylist{padding:0 70px 20px 70px}
+.paylist li{border:solid 1px #efda80;padding:20px 0px 20px 20px; margin-top:20px; background-color:#fffceb;width:820px; overflow:auto;}
+.paylist li div.left{float:left;width:188px;}
+.paylist li div.left label{font-weight:bold;padding-left:15px}
+.paylist li div.right{ float:left;}
+.paylist li div.right p{ padding:0; color:#666}
+.rad{ vertical-align:middle}
+
+.receiving{ width:650px}
+.receiving li{padding:10px 0 10px 10px; background-color:#f5f5f5; border:solid 0px #eed97c; margin-bottom:4px}
+.receiving li input{ vertical-align:middle }

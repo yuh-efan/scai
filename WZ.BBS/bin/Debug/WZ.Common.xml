@@ -1,0 +1,1266 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WZ.Common</name>
+    </assembly>
+    <members>
+        <member name="T:WZ.Common.EMail.MailHandler">
+            <summary>
+            邮件发送
+            </summary>
+        </member>
+        <member name="M:WZ.Common.EMail.MailHandler.SendSmtpEMail(WZ.Common.EMail.MailParam)">
+            <summary>
+            发送
+            </summary>
+            <param name="mail">发送邮件所需的参数</param>
+        </member>
+        <member name="T:WZ.Common.CacheData.DbCache">
+            <summary>
+            数据缓存
+            </summary>
+        </member>
+        <member name="M:WZ.Common.CacheData.DbCache.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="pPrefix">缓存前缀</param>
+        </member>
+        <member name="P:WZ.Common.CacheData.DbCache.TimeOut">
+            <summary>
+            单位秒
+            </summary>
+        </member>
+        <member name="P:WZ.Common.CacheData.DbCache.GetInstance">
+            <summary>
+            获取缓存策略
+            </summary>
+        </member>
+        <member name="M:WZ.Common.Req.GetSession(System.String)">
+            <summary>
+            获取Session
+            </summary>
+            <param name="pStr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.Req.GetQueryString(System.String)">
+            <summary>
+            得到Request.QueryString
+            </summary>
+            <param name="pStr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.Req.GetForm(System.String)">
+            <summary>
+            得到Request.Form
+            </summary>
+            <param name="pStr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.Req.GetCookies(System.String)">
+            <summary>
+            得到Request.Cookies
+            </summary>
+            <param name="pStr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.Req.GetRequest(System.String)">
+            <summary>
+            得到 Request 的全部
+            </summary>
+            <param name="pStr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.Req.GetUrlReferrer(System.String)">
+            <summary>
+            获取上一页URL
+            </summary>
+            <param name="pNoReturn">获取不到时返回值</param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.Req.PageName">
+            <summary>
+            获得当前页面的名称
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.Req.ParamCount">
+            <summary>
+            返回表单或Url参数的总个数(即Form+QueryString的参数总个数)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.Req.GetID">
+            <summary>
+            常用 获取ID 默认获取URL id参数 不是数值时返回值为0
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.Req.GetID(System.String)">
+            <summary>
+            常用 获取ID 不是数值时返回值为0
+            </summary>
+            <param name="pStr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.Req.GetID(System.String,System.Int32)">
+            <summary>
+            常用 获取ID
+            </summary>
+            <param name="pStr"></param>
+            <param name="pReturn">不是数值时返回值</param>
+            <returns></returns>
+        </member>
+        <member name="T:WZ.Common.OperationFile.PFile">
+            <summary>
+            上传文件
+            </summary>
+        </member>
+        <member name="M:WZ.Common.OperationFile.PFile.Upload_File">
+            <summary>
+            上传图片
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.OperationFile.PFile.isArr(System.String,System.String[])">
+            <summary>
+            判断某字符是否在某数据里
+            </summary>
+            <param name="str1">判断字符串</param>
+            <param name="arr1">数组</param>
+            <returns></returns>
+        </member>
+        <member name="P:WZ.Common.OperationFile.PFile.SaveAllPath">
+            <summary>
+            文件全路径
+            </summary>
+        </member>
+        <member name="P:WZ.Common.OperationFile.PFile.GetRelativeAllPath">
+            <summary>
+            需要保存到数据库的路径
+            </summary>
+        </member>
+        <member name="P:WZ.Common.OperationFile.PFile.GetRelativeAllPathThum">
+            <summary>
+            需要保存到数据库的路径 缩略图
+            </summary>
+        </member>
+        <member name="T:WZ.Common.EMail.MailParam">
+            <summary>
+            发送邮件专用专数数类
+            </summary>
+        </member>
+        <member name="P:WZ.Common.EMail.MailParam.SmtpServer">
+            <summary>
+            用于 SMTP 事务的主机的名称或 IP 地址。
+            </summary>
+        </member>
+        <member name="P:WZ.Common.EMail.MailParam.FromMail">
+            <summary>
+            发件人邮箱地址
+            </summary>
+        </member>
+        <member name="P:WZ.Common.EMail.MailParam.FromPass">
+            <summary>
+            发件人邮箱密码
+            </summary>
+        </member>
+        <member name="P:WZ.Common.EMail.MailParam.ToMail">
+            <summary>
+            收件人邮箱地址
+            </summary>
+        </member>
+        <member name="P:WZ.Common.EMail.MailParam.Subject">
+            <summary>
+            主题
+            </summary>
+        </member>
+        <member name="P:WZ.Common.EMail.MailParam.Body">
+            <summary>
+            内容
+            </summary>
+        </member>
+        <member name="P:WZ.Common.EMail.MailParam.AttachmentList">
+            <summary>
+            符件列表
+            </summary>
+        </member>
+        <member name="P:WZ.Common.EMail.MailParam.SmtpPort">
+            <summary>
+            邮件服务器端口
+            </summary>
+        </member>
+        <member name="P:WZ.Common.EMail.MailParam.EnableSsl">
+            <summary>
+            是否加密发送
+            </summary>
+        </member>
+        <member name="M:WZ.Common.CacheData.DefaultCacheStrategy.onRemove(System.String,System.Object,System.Web.Caching.CacheItemRemovedReason)">
+            <summary>
+            移除缓存时 回调的方法
+            </summary>
+            <param name="key"></param>
+            <param name="val"></param>
+            <param name="reason"></param>
+        </member>
+        <member name="M:WZ.Common.CacheData.DefaultCacheStrategy.RemoveCache(System.String)">
+            <summary>
+            删除缓存
+            </summary>
+            <param name="objId"></param>
+        </member>
+        <member name="M:WZ.Common.CacheData.DefaultCacheStrategy.RemoveCacheAll">
+            <summary>
+            删除所有缓存
+            </summary>
+        </member>
+        <member name="M:WZ.Common.CacheData.DefaultCacheStrategy.RemoveCacheRegex(System.String)">
+            <summary>
+            删除 匹配到的缓存
+            </summary>
+            <param name="pattern"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.CacheData.DefaultCacheStrategy.GetCacheKeys">
+            <summary>
+            获取所有缓存键
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.CacheData.DefaultCacheStrategy.SearchCacheRegex(System.String)">
+            <summary>
+            搜索 匹配到的缓存
+            </summary>
+            <param name="pattern"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.CacheData.DefaultCacheStrategy.GetCacheData(System.String)">
+            <summary>
+            获得缓存数据
+            </summary>
+            <param name="objId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.ICommon.IMessage.Error(System.String)">
+            <summary>
+            记录或输出错误(error)信息
+            </summary>
+            <param name="pErrMsg"></param>
+        </member>
+        <member name="M:WZ.Common.ICommon.IMessage.Error(System.String,System.String)">
+            <summary>
+            记录或输出错误(error)信息
+            </summary>
+            <param name="pErrMsg"></param>
+            <param name="pPath"></param>
+        </member>
+        <member name="M:WZ.Common.ICommon.IMessage.Success(System.String)">
+            <summary>
+            记录或输出错误(error)信息
+            </summary>
+            <param name="pErrMsg"></param>
+        </member>
+        <member name="M:WZ.Common.ICommon.IMessage.Success(System.String,System.String)">
+            <summary>
+            记录或输出成功(success)信息
+            </summary>
+            <param name="pErrMsg"></param>
+            <param name="pPath"></param>
+        </member>
+        <member name="M:WZ.Common.ICommon.IMessage.Write(System.String)">
+            <summary>
+            记录或输出提示(message)信息
+            </summary>
+            <param name="pMsg"></param>
+        </member>
+        <member name="M:WZ.Common.ICommon.IMessage.AddMessage(System.String,System.String)">
+            <summary>
+            添加一个信息类型
+            </summary>
+            <param name="pName">类型名称</param>
+            <param name="pMsg"></param>
+        </member>
+        <member name="M:WZ.Common.ICommon.IMessage.WriteMessage(System.String@,System.String,WZ.Common.MessageGeneral.MessageEnum)">
+            <summary>
+            记录或输出信息
+            </summary>
+            <param name="pMsg"></param>
+            <param name="pPath"></param>
+            <param name="pEM"></param>
+        </member>
+        <member name="M:WZ.Common.ICommon.IMessage.WriteMessage(System.String,System.String@,System.String,System.String)">
+            <summary>
+            记录或输出信息
+            </summary>
+            <param name="pTitie"></param>
+            <param name="pMsg"></param>
+            <param name="pPath"></param>
+            <param name="pType"></param>
+        </member>
+        <member name="P:WZ.Common.ICommon.IMessage.ReturnMessage">
+            <summary>
+            以json格式返回信息 {"type":"error","Info":"提交失败"}
+            </summary>
+        </member>
+        <member name="P:WZ.Common.ICommon.IMessage.GetInfo">
+            <summary>
+            获取json info信息
+            </summary>
+        </member>
+        <member name="P:WZ.Common.ICommon.IMessage.IsError">
+            <summary>
+            是否error状态
+            </summary>
+        </member>
+        <member name="P:WZ.Common.ICommon.IMessage.IsSuccess">
+            <summary>
+            是否success状态
+            </summary>
+        </member>
+        <member name="M:WZ.Common.MessageGeneral.Error(System.String)">
+            <summary>
+            出错信息
+            </summary>
+            <param name="pErrMsg"></param>
+        </member>
+        <member name="M:WZ.Common.MessageGeneral.Error(System.String,System.String)">
+            <summary>
+            出错信息 有路径
+            </summary>
+            <param name="pErrMsg"></param>
+            <param name="pPath"></param>
+        </member>
+        <member name="M:WZ.Common.MessageGeneral.Success(System.String)">
+            <summary>
+            成功信息
+            </summary>
+            <param name="pErrMsg"></param>
+        </member>
+        <member name="M:WZ.Common.MessageGeneral.Success(System.String,System.String)">
+            <summary>
+            成功信息
+            </summary>
+            <param name="pErrMsg"></param>
+            <param name="pPath"></param>
+        </member>
+        <member name="T:WZ.Common.AbsUrlVar">
+            <summary>
+            不能实例化该类
+            </summary>
+        </member>
+        <member name="M:WZ.Common.AbsUrlVar.SetVar(System.Int32,System.Int32)">
+            <summary>
+            设置变量
+            </summary>
+        </member>
+        <member name="P:WZ.Common.AbsUrlVar.records_count">
+            <summary>
+            总记录数
+            当设置此属性时,同时求出 页总数(page_count) , 获取页码(page_index)
+            </summary>
+        </member>
+        <member name="T:WZ.Common.PagingUrlVar">
+            <summary>
+            分页属性辅助类
+            </summary>
+        </member>
+        <member name="T:WZ.Common.PagingVar">
+            <summary>
+            sql语句 与 数据库驱动 相关
+            </summary>
+        </member>
+        <member name="F:WZ.Common.PagingVar.SQLCount">
+            <summary>
+            获取总记录数
+            如:select count(0) from table where abc=1
+            </summary>
+        </member>
+        <member name="F:WZ.Common.PagingVar.SQLRead">
+            <summary>
+            循环主键 如:select ProID from table where abc=1 order by ProID desc
+            </summary>
+        </member>
+        <member name="F:WZ.Common.PagingVar.SQL">
+            <summary>
+            获取记录 如:select ProID,Name,Price table where abc=1 and ProID in({0}) order by ProID desc
+            </summary>
+        </member>
+        <member name="F:WZ.Common.PagingVar.PageCount">
+            <summary>
+            最大分类数
+            </summary>
+        </member>
+        <member name="T:WZ.Common.Paging">
+            <summary>
+            时间 换 空间
+            </summary>
+        </member>
+        <member name="T:WZ.Common.Paging_DataTable">
+            <summary>
+            空间 换 时间
+            </summary>
+        </member>
+        <member name="T:WZ.Common.Paging_Adapter">
+            <summary>
+            时间 换 空间
+            </summary>
+        </member>
+        <member name="T:WZ.Common.Control.InputText">
+            <summary>
+            文本框输入
+            </summary>
+        </member>
+        <member name="F:WZ.Common.Config.Constant.MaxCount_Email">
+            <summary>
+            最大字符数 邮箱
+            </summary>
+        </member>
+        <member name="F:WZ.Common.Config.Constant.MaxCount_UserName">
+            <summary>
+            最大字符数 用户名
+            </summary>
+        </member>
+        <member name="F:WZ.Common.Config.Constant.MaxCount_Cart">
+            <summary>
+            购物车最大数量
+            </summary>
+        </member>
+        <member name="F:WZ.Common.Config.Constant.Original_PicPath_Prefix">
+            <summary>
+            原图路径 前缀
+            </summary>
+        </member>
+        <member name="T:WZ.Common.URLPara">
+            <summary>
+            URL参数处理
+            </summary>
+        </member>
+        <member name="M:WZ.Common.URLPara.ToString(System.String,System.String)">
+            <summary>
+            单个参数修改
+            </summary>
+            <param name="pKey">参数名</param>
+            <param name="pValue">参数值</param>
+            <returns>string</returns>
+        </member>
+        <member name="M:WZ.Common.URLPara.ToString(System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            多个参数修改
+            </summary>
+            <param name="pD">Dictionary string, string</param>
+            <returns>string</returns>
+        </member>
+        <member name="T:WZ.Common.ReqHandle">
+            <summary>
+            快速获取表单值,已过时
+            </summary>
+        </member>
+        <member name="F:WZ.Common.ReqHandle.IsRun_ReqToDirc">
+            <summary>
+            是否运行过IsRun_ReqToDirc方法
+            </summary>
+        </member>
+        <member name="M:WZ.Common.ReqHandle.ReqToDirc">
+            <summary>
+            将指定的NameValueCollection所有数据添加到Dictionary string, string 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.ReqHandle.ReqToDirc(System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            将指定的NameValueCollection所有数据添加到Dictionary string, string 
+            </summary>
+            <param name="pDirc">需要替换的NameValueCollection key值</param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.ReqHandle.ToObject(System.Object)">
+            <summary>
+            保存到Object
+            </summary>
+            <param name="t"></param>
+        </member>
+        <member name="P:WZ.Common.ReqHandle.Dirc">
+            <summary>
+            NameValueCollection所有数据
+            </summary>
+        </member>
+        <member name="T:WZ.Common.HistoryData">
+            <summary>
+            最近浏览过
+            </summary>
+        </member>
+        <member name="M:WZ.Common.HistoryData.#ctor(System.String,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="pCookieName">cookie名</param>
+            <param name="pMax">最多存储量</param>
+        </member>
+        <member name="M:WZ.Common.HistoryData.Add(System.Int32)">
+            <summary>
+            添加数据
+            </summary>
+            <param name="pID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.Control.Templated.TemplatedList.CreateControlHierarchy">
+            <summary>
+            创建一个带或不带指定数据源的控件层次结构
+            注意：当第二次执行数据绑定时，会执行两遍
+            </summary>
+        </member>
+        <member name="P:WZ.Common.Control.Templated.TemplatedList.DataSource">
+            <summary>
+            绑定的列表的数据源
+            </summary>
+        </member>
+        <member name="T:WZ.Common.Config.HTML">
+            <summary>
+            Html代码
+            </summary>
+        </member>
+        <member name="F:WZ.Common.Config.HTML.CheckMsg">
+            <summary>
+            信息错误提示的html结构
+            </summary>
+        </member>
+        <member name="T:WZ.Common.MessageAjaxC">
+            <summary>
+            用于前台
+            </summary>
+        </member>
+        <member name="M:WZ.Common.MessageAjaxC.Error(System.String)">
+            <summary>
+            出错信息
+            </summary>
+            <param name="pErrMsg"></param>
+        </member>
+        <member name="M:WZ.Common.MessageAjaxC.Error(System.String,System.String)">
+            <summary>
+            出错信息 有路径
+            </summary>
+            <param name="pErrMsg"></param>
+            <param name="pPath"></param>
+        </member>
+        <member name="M:WZ.Common.MessageAjaxC.Success(System.String)">
+            <summary>
+            成功信息
+            </summary>
+            <param name="pErrMsg"></param>
+        </member>
+        <member name="M:WZ.Common.MessageAjaxC.Success(System.String,System.String)">
+            <summary>
+            成功信息
+            </summary>
+            <param name="pErrMsg"></param>
+            <param name="pPath"></param>
+        </member>
+        <member name="M:WZ.Common.MessageAjaxC.AddMessage(System.String,System.String)">
+            <summary>
+            json 添加
+            </summary>
+            <param name="pKey"></param>
+            <param name="pMsg"></param>
+        </member>
+        <member name="T:WZ.Common.Js">
+            <summary>
+            Js常用功能
+            </summary>
+        </member>
+        <member name="M:WZ.Common.Js.Alert(System.String)">
+            <summary>
+             Alert 点确定后history.back();
+            </summary>
+            <param name="pStr">显示消息内容</param>
+        </member>
+        <member name="M:WZ.Common.Js.Alert(System.String,System.String)">
+            <summary>
+            Alert 点确定后location.href=''
+            </summary>
+            <param name="pStr">显示消息内容</param>
+            <param name="pPath">跳转路径</param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.Js.AlertClose(System.String)">
+            <summary>
+            Alert 点确定后window.close();
+            </summary>
+            <param name="pStr">显示消息内容</param>
+        </member>
+        <member name="M:WZ.Common.Js.Write(System.String)">
+            <summary>
+            输出js,执行Response.End()
+            </summary>
+            <param name="pStr">js代码</param>
+        </member>
+        <member name="M:WZ.Common.Js.WriteNoEnd(System.String)">
+            <summary>
+            输出js,无Response.End()
+            </summary>
+            <param name="pStr">显示消息内容</param>
+        </member>
+        <member name="M:WZ.Common.Js.Parent(System.String)">
+            <summary>
+            全屏跳转 parent.top.location.href=''
+            </summary>
+            <param name="pStr">跳转路径</param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.Js.Confirm(System.String,System.String,System.String)">
+            <summary>
+            是否跳转 Confirm
+            </summary>
+            <param name="pStr">显示消息内容</param>
+            <param name="pPathYes">点"是" 跳转路径</param>
+            <param name="pPathNo">点"否" 跳转路径</param>
+        </member>
+        <member name="M:WZ.Common.MessageAjax.Error(System.String)">
+            <summary>
+            出错信息
+            </summary>
+            <param name="pErrMsg"></param>
+        </member>
+        <member name="M:WZ.Common.MessageAjax.Error(System.String,System.String)">
+            <summary>
+            出错信息 有路径
+            </summary>
+            <param name="pErrMsg"></param>
+            <param name="pPath"></param>
+        </member>
+        <member name="M:WZ.Common.MessageAjax.Success(System.String)">
+            <summary>
+            成功信息
+            </summary>
+            <param name="pErrMsg"></param>
+        </member>
+        <member name="M:WZ.Common.MessageAjax.Success(System.String,System.String)">
+            <summary>
+            成功信息
+            </summary>
+            <param name="pErrMsg"></param>
+            <param name="pPath"></param>
+        </member>
+        <member name="M:WZ.Common.MessageAjax.AddMessage(System.String,System.String)">
+            <summary>
+            json 添加
+            </summary>
+            <param name="pKey"></param>
+            <param name="pMsg"></param>
+        </member>
+        <member name="T:WZ.Common.Fn">
+            <summary>
+            常用功能
+            </summary>
+        </member>
+        <member name="M:WZ.Common.Fn.IsInt(System.String,System.Int32)">
+            <summary>
+            判断是否是Int 不是返回 pReturn
+            </summary>
+            <param name="pStr">数字字符串</param>
+            <param name="pReturn">不是Int时返回值</param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.Fn.IsIntBool(System.String)">
+            <summary>
+            判断是否是Int
+            </summary>
+            <param name="pStr">数字字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.Fn.IsByte(System.String,System.Byte)">
+            <summary>
+            判断是否是Int 不是返回 pReturn
+            </summary>
+            <param name="pStr">数字字符串</param>
+            <param name="pReturn">不是Int时返回值</param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.Fn.IsByteBool(System.String)">
+            <summary>
+            判断是否是Int
+            </summary>
+            <param name="pStr">数字字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.Fn.IsLong(System.String,System.Int64)">
+            <summary>
+            判断是否是Long 不是返回 pReturn
+            </summary>
+            <param name="pStr">数字字符串</param>
+            <param name="pReturn">不是Long时返回值</param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.Fn.IsLongBool(System.String)">
+            <summary>
+            判断是否是Long 不是返回 bool
+            </summary>
+            <param name="pStr">数字字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.Fn.IsDouble(System.String,System.Double)">
+            <summary>
+            判断是否是Double 不是返回 pReturn
+            </summary>
+            <param name="pStr">数字字符串</param>
+            <param name="pReturn">非Double时返回值</param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.Fn.IsDoubleBool(System.String)">
+            <summary>
+            判断是否是Double 不是返回 Bool
+            </summary>
+            <param name="pStr">数字字符串</param>
+            <returns>bool</returns>
+        </member>
+        <member name="M:WZ.Common.Fn.IsDate(System.String,System.DateTime)">
+            <summary>
+            判断是否是DateTime 不是返回 pReturn
+            </summary>
+            <param name="pStr">数字字符串</param>
+            <param name="pReturn">非DateTime时返回值</param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.Fn.IsDateBool(System.String)">
+            <summary>
+            判断是否是DateTime 不是返回 bool
+            </summary>
+            <param name="pStr">数字字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.Fn.IsDateDayArea(System.DateTime,System.TimeSpan,System.TimeSpan)">
+            <summary>
+            判断时间是否当天范围
+            </summary>
+            <param name="time"></param>
+            <param name="startTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.Fn.MD5(System.String)">
+            <summary>
+            Md5加1密两次
+            </summary>
+            <param name="pStr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.Fn.IsHasBit(System.Int32,System.Int32)">
+            <summary>
+            位 是否有此位
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.Fn.HanZiLen(System.String)">
+            <summary>
+            字符串长度 一个汉字两个字符
+            </summary>
+            <param name="pStr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.Fn.Left(System.String,System.Int32,System.String)">
+            <summary>
+            载取左字符
+            </summary>
+            <param name="pStr">字符串内容</param>
+            <param name="pLen">数据个数</param>
+            <param name="pReturn">超出时后边要加的返回的内容</param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.Fn.IsIntArr(System.String)">
+            <summary>
+            过滤字符串的非int字符 逗号隔开
+            </summary>
+            <param name="pStr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.Fn.IsIntArr(System.String,System.Char)">
+            <summary>
+            过滤字符串的非int字符
+            </summary>
+            <param name="pStr"></param>
+            <param name="pSplit">分隔符</param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.Fn.IsIntArrBool(System.String)">
+            <summary>
+            字符串是否可以 转 int[] 是:true 否:false
+            </summary>
+            <param name="pStr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.Fn.IsVerifyCode(System.String,System.String)">
+            <summary>
+            判断验证码是否正确 true:正确 false:错误 删除session
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.Fn.IsVerifyCode1(System.String,System.String)">
+            <summary>
+            判断验证码是否正确 true:正确 false:错误 不删除session
+            </summary>
+            <param name="pTxtName"></param>
+            <param name="pSessionCodeName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.Fn.SCNumber">
+            <summary>
+            生成编号
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.Fn.GetGuid20">
+            <summary>
+            20位guid
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.Fn.IntArrToBit(System.Int32[])">
+            <summary>
+            将一个数组 所有值相或
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.Fn.StrToIntArr(System.String)">
+            <summary>
+            string转int[]
+            </summary>
+            <param name="pStr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.Fn.DtToDic(System.Data.DataTable,System.String,System.String)">
+            <summary>
+            DataTable转Dictionary
+            </summary>
+            <param name="pDt"></param>
+            <param name="pKey"></param>
+            <param name="pValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.Fn.SetDataTablePrimary(System.Data.DataTable)">
+            <summary>
+            设置DataTable 主键
+            </summary>
+        </member>
+        <member name="M:WZ.Common.Fn.GetDataTableFind(System.Data.DataTable,System.Object,System.String)">
+            <summary>
+            获取Key的Name值
+            不会返回null
+            </summary>
+            <param name="pDt"></param>
+            <param name="pKeyValue"></param>
+            <param name="pFieldName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.Fn.GetDataTableValue(System.Data.DataTable,System.String,System.String)">
+            <summary>
+            获取DataTable 第一行的指定字段值(根据检索结果)
+            </summary>
+            <param name="pDt"></param>
+            <param name="pWhere"></param>
+            <param name="pFieldName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.Fn.GetDataTableFirst(System.Data.DataTable,System.String)">
+            <summary>
+            获取DataTable 第一行的指定字段值
+            </summary>
+            <param name="pDt"></param>
+            <param name="pFieldName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.Fn.RefreshSelf">
+            <summary>
+            刷新自身页面
+            </summary>
+        </member>
+        <member name="M:WZ.Common.Fn.GetCommandName(System.Object)">
+            <summary>
+            获取按钮控件CommandName
+            </summary>
+            <param name="sender"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.Fn.ReplaceHTML(System.String)">
+            <summary>
+            Html过滤
+            </summary>
+            <param name="pHtml"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.Fn.GetPageHtml(System.String)">
+            <summary>
+            获取页面html
+            </summary>
+            <param name="pURL">url</param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.Fn.GetControlHtml(System.Web.UI.Control)">
+            <summary>
+            获取 服务器控件生成的html
+            </summary>
+            <param name="pCtrl"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.Fn.EncodeHtml(System.String)">
+            <summary>
+            Html编码
+            </summary>
+            <param name="pStr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.Fn.ResponseNoCache">
+            <summary>
+            Response.CacheControl = "no-cache"
+            </summary>
+        </member>
+        <member name="M:WZ.Common.Fn.TestReplace.ReplaceHtmlTag(System.String)">
+            <summary>
+            去除HTML标记
+            </summary>
+            <param name="Htmlstring">包括HTML的源码 </param>
+            <returns>已经去除后的文字</returns>
+        </member>
+        <member name="T:WZ.Common.Control.ShowText">
+            <summary>
+            显示文本
+            </summary>
+        </member>
+        <member name="M:WZ.Common.OperationFile.MakeWatermark.#ctor(System.String,System.IO.Stream)">
+            <summary>
+            
+            </summary>
+            <param name="pWatermarkPath">水印绝对路径</param>
+            <param name="pFileStream">被添加水印图片流</param>
+        </member>
+        <member name="M:WZ.Common.OperationFile.MakeWatermark.GetWatermark">
+            <summary>
+            生成水印
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:WZ.Common.SqlChecker">
+            <summary>
+            防SQL注入检查器
+            少用此类
+            </summary>
+        </member>
+        <member name="M:WZ.Common.SqlChecker.#ctor(System.Web.HttpRequest,System.Web.HttpResponse)">
+            <summary>
+            由此构造函数创建的对象,在验证Sql注入之后将停留在原来页面上
+            </summary>
+            <param name="_request">当前请求的 Request 对象</param>
+            <param name="_response">当前请求的 Response 对象</param>
+        </member>
+        <member name="M:WZ.Common.SqlChecker.#ctor(System.Web.HttpRequest,System.Web.HttpResponse,System.String)">
+            <summary>
+            由此构造函数创建的对象,在验证Sql注入之后将请求将导向由 _safeUrl 指定的安全url页面上
+            </summary>
+            <param name="_request">当前请求的 Request 对象</param>
+            <param name="_response">当前请求的 Response 对象</param>
+            <param name="_safeUrl">验证Sql注入之后将导向的安全 url</param>
+        </member>
+        <member name="M:WZ.Common.SqlChecker.CheckRequestQuery">
+            <summary>
+            检查URL参数中是否带有SQL注入的可能关键字。
+            </summary>
+            <returns>存在SQL注入关键字时返回 true，否则返回 false</returns>
+        </member>
+        <member name="M:WZ.Common.SqlChecker.CheckRequestForm">
+            <summary>
+            检查提交表单中是否存在SQL注入的可能关键字
+            </summary>
+            <returns>存在SQL注入关键字时返回 true，否则返回 false</returns>
+        </member>
+        <member name="M:WZ.Common.SqlChecker.CheckKeyWord(System.String)">
+            <summary>
+            检查_sword是否包涵SQL关键字
+            </summary>
+            <param name="_sWord">需要检查的字符串</param>
+            <returns>存在SQL注入关键字时返回 true，否则返回 false</returns>
+        </member>
+        <member name="M:WZ.Common.SqlChecker.Check(System.String)">
+            <summary>
+            执行Sql注入验证
+            </summary>
+        </member>
+        <member name="P:WZ.Common.SqlChecker.KeyWord">
+            <summary>
+            只读属性 SQL关键字
+            </summary>
+        </member>
+        <member name="P:WZ.Common.SqlChecker.RegexString">
+            <summary>
+            只读属性过滤特殊字符
+            </summary>
+        </member>
+        <member name="P:WZ.Common.SqlChecker.Msg">
+            <summary>
+            当出现Sql注入时需要提示的错误信息(主要是运行一些客户端的脚本)
+            </summary>
+        </member>
+        <member name="T:WZ.Common.Control.Paging_Show">
+            <summary>
+            分页
+            </summary>
+        </member>
+        <member name="F:WZ.Common.Control.Paging_Show.Style">
+            <summary>
+            分页控件样式
+            </summary>
+        </member>
+        <member name="P:WZ.Common.Control.Paging_Show.string_format">
+            <summary>
+            普通连接格式
+            </summary>
+        </member>
+        <member name="P:WZ.Common.Control.Paging_Show.string_format_sel">
+            <summary>
+            选中格式
+            </summary>
+        </member>
+        <member name="P:WZ.Common.Control.Paging_Show.string_format_first">
+            <summary>
+            首页
+            </summary>
+        </member>
+        <member name="P:WZ.Common.Control.Paging_Show.string_format_last">
+            <summary>
+            尾页
+            </summary>
+        </member>
+        <member name="P:WZ.Common.Control.Paging_Show.string_format_prv">
+            <summary>
+            上一页
+            </summary>
+        </member>
+        <member name="P:WZ.Common.Control.Paging_Show.string_format_next">
+            <summary>
+            下一页
+            </summary>
+        </member>
+        <member name="P:WZ.Common.Control.Paging_Show.string_format_span">
+            <summary>
+            页码显示格式
+            </summary>
+        </member>
+        <member name="P:WZ.Common.Control.Paging_Show.prv_count">
+            <summary>
+            当前页 前面个数 prv_count = 5
+            </summary>
+        </member>
+        <member name="P:WZ.Common.Control.Paging_Show.next_count">
+            <summary>
+            当前页后面个数 next_count = 5
+            </summary>
+        </member>
+        <member name="P:WZ.Common.Control.Paging_Show.f">
+            <summary>
+            suger.model.fy 类型
+            </summary>
+        </member>
+        <member name="P:WZ.Common.Control.Paging_Show.cs">
+            <summary>
+            格式 ?p={0}
+            </summary>
+        </member>
+        <member name="M:WZ.Common.MessageAjaxJs.WriteJS1(System.String,System.String,System.Boolean,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="pEventArgument">参数</param>
+            <param name="pClientCallBack"></param>
+            <param name="pIsAjax">是否无视 if(!IsAjaxValidator) return true; 存在</param>
+            <param name="pIsLoading"></param>
+            <returns></returns>
+        </member>
+        <member name="T:WZ.Common.Control.Verify">
+            <summary>
+            验证码控件
+            </summary>
+        </member>
+        <member name="T:WZ.Common.Config.PubEnum">
+            <summary>
+            公共枚举
+            </summary>
+        </member>
+        <member name="T:WZ.Common.Config.PubEnum.CurrentProStatus">
+            <summary>
+            订单里保存每个产品购买的时的产品状态
+            </summary>
+        </member>
+        <member name="T:WZ.Common.CacheData.ICacheStrategy">
+            <summary>
+            缓存策略接口
+            </summary>
+        </member>
+        <member name="M:WZ.Common.CacheData.ICacheStrategy.AddDefault(System.String,System.Object)">
+            <summary>
+            添加Cache
+            最后一次访问所插入对象时与该对象过期时之间的时间间隔。如果该值等效于 20 分钟，则对象在最后一次被访问 20 分钟之后将过期并被从缓存中移除。如果使用可调过期，则 absoluteExpiration 参数必须为 System.Web.Caching.Cache.NoAbsoluteExpiration。
+            </summary>
+            <param name="objId"></param>
+            <param name="o"></param>
+        </member>
+        <member name="M:WZ.Common.CacheData.ICacheStrategy.Add(System.String,System.Object)">
+            <summary>
+            添加Cache
+            </summary>
+            <param name="objId"></param>
+            <param name="o"></param>
+        </member>
+        <member name="M:WZ.Common.CacheData.ICacheStrategy.AddCacheDepend(System.String,System.Object,System.String[])">
+            <summary>
+            添加Cache 有缓存依赖
+            若有dependKey缓存有任何一项更改时,会自动清除此项
+            </summary>
+            <param name="objId"></param>
+            <param name="o"></param>
+            <param name="dependKey"></param>
+        </member>
+        <member name="M:WZ.Common.CacheData.ICacheStrategy.AddFileDepend(System.String,System.Object,System.String[])">
+            <summary>
+            添加Cache 有缓存依赖
+            若有files 文件有任何一项更改时,会自动清除此项
+            </summary>
+            <param name="objId"></param>
+            <param name="o"></param>
+            <param name="files"></param>
+        </member>
+        <member name="M:WZ.Common.CacheData.ICacheStrategy.RemoveCache(System.String)">
+            <summary>
+            删除缓存
+            </summary>
+            <param name="objId"></param>
+        </member>
+        <member name="M:WZ.Common.CacheData.ICacheStrategy.RemoveCacheAll">
+            <summary>
+            删除所有缓存
+            </summary>
+        </member>
+        <member name="M:WZ.Common.CacheData.ICacheStrategy.RemoveCacheRegex(System.String)">
+            <summary>
+            删除 匹配到的缓存
+            </summary>
+            <param name="pattern"></param>
+        </member>
+        <member name="M:WZ.Common.CacheData.ICacheStrategy.GetCacheKeys">
+            <summary>
+            获取所有缓存键
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.CacheData.ICacheStrategy.SearchCacheRegex(System.String)">
+            <summary>
+            搜索 匹配到的缓存
+            </summary>
+            <param name="pattern"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.CacheData.ICacheStrategy.GetCacheData(System.String)">
+            <summary>
+            获得缓存数据
+            </summary>
+            <param name="objId"></param>
+            <returns></returns>
+        </member>
+        <member name="P:WZ.Common.CacheData.ICacheStrategy.TimeOut">
+            <summary>
+            设置 缓存超时时间
+            </summary>
+        </member>
+        <member name="T:WZ.Common.OperationFile.MakeThumbnail">
+            <summary>
+            上传缩略图
+            </summary>
+        </member>
+        <member name="M:WZ.Common.OperationFile.MakeThumbnail.#ctor(System.String,System.Int32,System.Int32,WZ.Common.OperationFile.PFileVar.ThumPicType,System.IO.Stream)">
+            <summary>
+            
+            </summary>
+            <param name="pThumbnailPath">保存绝对路径</param>
+            <param name="pWidth"></param>
+            <param name="pHeight"></param>
+            <param name="pThumPicMode">按比例缩放类型</param>
+            <param name="pFileStream">图片流</param>
+        </member>
+        <member name="T:WZ.Common.OperationFile.FileCommon">
+            <summary>
+            文件基本操作
+            </summary>
+        </member>
+        <member name="M:WZ.Common.OperationFile.FileCommon.Delete(System.String)">
+            <summary>
+            删除文件
+            </summary>
+            <param name="pPath">相对路径如:/pic/a.jpg</param>
+        </member>
+        <member name="M:WZ.Common.OperationFile.FileCommon.DeleteFolder(System.String)">
+            <summary>
+            删除目录,包括子目录及文件
+            </summary>
+            <param name="pPath">相对路径如:/pic/a.jpg</param>
+        </member>
+        <member name="M:WZ.Common.OperationFile.FileCommon.IsSameFloder(System.String,System.Boolean)">
+            <summary>
+            判断文件夹是否存在
+            </summary>
+            <param name="pAbsolutePath">绝对路径</param>
+            <param name="pB">文件夹不存在时,是否创建 True:创建</param>
+            <returns>bool</returns>
+        </member>
+        <member name="M:WZ.Common.OperationFile.FileCommon.ReadFile(System.String,System.IO.FileMode,System.IO.FileAccess)">
+            <summary>
+            获取文件内容
+            </summary>
+            <param name="pAbsolutePath">绝对路径</param>
+            <param name="fm">FileMode</param>
+            <param name="fa">FileAccess</param>
+            <returns>返回文件中的内容</returns>
+        </member>
+        <member name="M:WZ.Common.OperationFile.FileCommon.DeleteOldPic(System.String,System.String,System.String)">
+            <summary>
+            删除原图片 修改时
+            </summary>
+            <param name="pOldPic"></param>
+            <param name="pNewPic"></param>
+            <param name="pPath"></param>
+        </member>
+        <member name="M:WZ.Common.OperationFile.FileCommon.DeletePicData(System.String,System.String,System.String)">
+            <summary>
+            从数据库删除原图片 修改时
+            </summary>
+            <param name="pSql">sql 一个图片字段</param>
+            <param name="pNewPic">新图片名称</param>
+            <param name="pPath">相对路径 /uploadfile/ </param>
+        </member>
+        <member name="M:WZ.Common.OperationFile.FileCommon.DeletePicDataList(System.String,System.String)">
+            <summary>
+            列表页删除图片时
+            </summary>
+            <param name="pSql">sql 词句 第一个字段为图片字段名</param>
+            <param name="pPath">相对路径 /abc/</param>
+        </member>
+        <member name="M:WZ.Common.OperationFile.FileCommon.IsSameFileName(System.String,System.String)">
+            <summary>
+            判断服务器上是否有重复文件,如有,则改变图片文件名
+            </summary>
+            <param name="cf_path">绝对路径</param>
+            <param name="cf_file_name">文件名</param>
+            <returns>返回文件名</returns>
+        </member>
+        <member name="T:WZ.Common.OperationFile.PFileVar">
+            <summary>
+            上传文件
+            </summary>
+        </member>
+        <member name="T:WZ.Common.OperationFile.PFileVar.UpType">
+            <summary>
+            文件格式
+            </summary>
+        </member>
+        <member name="T:WZ.Common.OperationFile.PFileVar.ThumPicType">
+            <summary>
+            上传图片指定按哪种类型上传
+            </summary>
+        </member>
+    </members>
+</doc>

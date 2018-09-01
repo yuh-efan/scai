@@ -1,0 +1,20 @@
+
+/*   Õ®”√css   */
+.left h1,.leftcurrent,.right h1 { background:url(../images/help.gif) no-repeat;}
+
+
+
+.left { float:left; width:191px;}
+	.left h1 { height:81px; background-position:0 -28px;}
+	.leftmain { background:#f7f7f7;}
+	.leftbox { padding-bottom:10px; color:#333;}
+		.leftbox h2 { height:26px; line-height:26px; border-bottom:#ccc solid 1px; font-weight:bold; padding-left:10px; margin:0 10px;}
+		.leftbox ul { padding-top:10px; margin-left:10px;}
+		.leftbox li { height:24px; line-height:24px;text-align:right; padding-right:25px;}
+			.leftbox li a { color:#333;}
+			.leftbox li a:visited,.leftbox li a:link { color:#333;}
+			.leftbox li a:hover { color:#cd2a23; text-decoration:underline;}
+			.leftbox .leftcurrent { border-bottom:#ddd solid 1px; border-left:#ddd solid 1px; border-top:#ddd solid 1px; font-weight:bold; color:#02a318;}
+.right { float:right; width:754px;}
+	.right h1 { height:25px; line-height:25px; color:#333; font-weight:bold; padding-left:20px; background-position:-180px -113px; border-bottom:#ccc solid 1px;}
+	.help-content { padding:10px; line-height:2em; font-size:14px}

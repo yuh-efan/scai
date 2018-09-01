@@ -1,0 +1,7 @@
+.msgCheck{background-color:#ffdcd7; border:1px #d01e5e solid; color:#d01e5e;position:relative;}
+.msgCheck li{padding-left:25px; line-height:23px; height:23px; background:url(/images/error.gif) no-repeat 0 1px;}
+
+
+.msgCheck .checkText{padding-left:130px; }
+.msgCheck .checkClose{cursor:pointer; padding-left:18px; background:url(/images/close.gif) no-repeat}
+.msgCheck .checkClose{position:absolute; top:5px; right:5px;}

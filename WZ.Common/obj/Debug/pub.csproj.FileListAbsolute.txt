@@ -1,0 +1,7 @@
+E:\w网站\scw\pub\obj\Debug\ResolveAssemblyReference.cache
+E:\w网站\scw\pub\bin\Debug\pub.dll
+E:\w网站\scw\pub\bin\Debug\pub.pdb
+E:\w网站\scw\pub\obj\Debug\pub.dll
+E:\w网站\scw\pub\obj\Debug\pub.pdb
+E:\w网站\scw\pub\bin\Debug\DAL.dll
+E:\w网站\scw\pub\bin\Debug\DAL.pdb

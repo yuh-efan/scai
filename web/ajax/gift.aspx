@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="gift.aspx.cs" Inherits="WZ.Web.ajax.gift" %>

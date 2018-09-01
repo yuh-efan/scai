@@ -1,0 +1,16 @@
+
+/*   通用css   */
+
+.Category-box h1,.Category span,.Category-box h2,.Category-box h3 { background:url(../images/products_bg.gif) no-repeat;}
+
+/*   食谱、套餐分类css   */
+	.Category-box { padding:5px; background:#eaeaea;}
+	.Category-box h3 { height:32px; background-position:-474px -301px;}
+	.Category { background:#fff; padding:0 10px 20px 20px;}
+		.Category li { padding-top:10px; padding-bottom:5px; border-bottom:#e2e2e2 solid 1px;}
+		.Category span { display:block; height:25px; line-height:25px; background-position:-669px -27px; padding-left:17px;}
+		.Category li span a { color:#333; font-weight:bold;}
+		.Category li span a:visited,.Category li span a:link { color:#333;}
+		.Category li a { display:inline-block; margin-right:10px; height:22px; line-height:22px; color:#315f80; text-decoration:none;}
+		.Category li a:visited,Category li:link { color:#315f80; text-decoration:none;}
+		.Category li a:hover { color:#cd2a23; text-decoration:underline;}

@@ -1,0 +1,15 @@
+.mod-bot{ width:100%; background:#cecece url(../images/modbot/botbg.gif) repeat-x;}
+.bot-bg{background:#cecece url(../images/modbot/botbg.gif) repeat-x;padding:22px 0 10px 0;}
+.marBot{padding-bottom:26px;}
+
+.bot-help{width:736px;}
+	
+		.bot-help-title{line-height:22px;padding-top:5px}
+		.bot-help-title li{float:left;width:120px; padding-right:34px;background:url(../images/modbot/bothelp.gif) no-repeat 0 0; text-indent:25px;}
+		
+		.bot-help-list{padding-top:8px}
+		.bot-help-list ul{float:left;width:120px; padding-right:34px}
+		.bot-help-list ul.clearpadd,.bot-help-title li.clearpadd{padding-right:0}
+			.bot-help-list ul li{ padding-left:16px; line-height:20px; background:url(../images/modbot/botpoint.gif) no-repeat 0 center}
+		.bot-link{ line-height:32px; background-color:#ededed; text-align:center;}
+			.bot-link span{padding:0 20px;}

@@ -1,0 +1,79 @@
+/*************
+body,dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5,h6, pre, form, fieldset, input, p, blockquote, table, th, td, embed,object {
+     padding: 0;
+     margin: 0;
+}
+table {
+     border-collapse: collapse;
+     border-spacing: 0;
+}***********/
+/*************
+address, caption, cite, code, dfn, em, 
+h1, h2, h3, h4, h5, h6, th, var {
+     font-weight: normal;
+     font-style: normal;
+	 font-size:12px;
+}***********/
+/*************
+ul,li {
+     list-style: none;
+}
+a img, :link img, :visited img {
+        border:0px;
+} 
+html { overflow-y:scroll;}
+body { overflow:visible;}
+.clear { clear:both;}
+
+body { font-size:12px; color:#666;}
+***********/
+/*************.main { margin:0 auto; width:980px; padding-top:10px; padding-bottom:20px; overflow:hidden;}***********/
+
+
+/*.current{ background:url(../images/bg.gif) no-repeat;}
+.current { margin:15px auto 0 auto; width:970px; height:25px; line-height:25px; border-bottom:#02a318 solid 1px; background-position:-512px 0; padding-left:10px;}*/
+
+.cssSmall-pic { display:block; border:#ccc solid 1px; padding:1px; overflow:hidden;}
+.cssSmall-pic:hover { border:#cd2a23 solid 1px;}
+
+
+.Recently-main li { padding-top:15px; width:160px;}
+.Recently-main li .cssSmall-pic { float:left; display:block; width:87px; height:76px; border:#ccc solid 1px; padding:1px; margin-right:10px; overflow:hidden;}
+.Recently-main li .cssSmall-pic:hover { border:#cd2a23 solid 1px;}
+.Recently-main li .cssName { display:block; height:58px; overflow:hidden;}
+.Recently-main li .cssName a { color:#315f80; text-decoration:none;}
+.Recently-main li .cssName a:hover { color:#cd2a23; text-decoration:underline;}
+.Recently-main li .cssPrice { color:#cd2a23;}
+
+.Hot-products li { float:left; width:109px; text-align:center; padding:0 8px;}
+.Hot-products li .cssSmall-pic { display:block; border:#ccc solid 1px; padding:1px; overflow:hidden;}
+.Hot-products li .cssSmall-pic:hover { border:#cd2a23 solid 1px;}
+.Hot-products li .cssName {}
+.Hot-products li .cssName a { color:#315f80; text-decoration:none;}
+.Hot-products li .cssName a:hover { color:#cd2a23; text-decoration:underline;}
+.Hot-products li .cssPrice { color:#cd2a23; font-weight:bold;}
+
+/*与首页冲突
+.content li { background:#fff; padding:10px;}
+.content li .cssSmall-pic { width:122px; display:inline-block; height:90px; border:#ccc solid 1px; padding:1px; overflow:hidden;}
+.content li .cssSmall-pic:hover { border:#cd2a23 solid 1px;}
+.content li .cssName { text-align:center;}
+.content li .cssName a { color:#315f80; text-decoration:none;}
+.content li .cssName a:hover { color:#cd2a23; text-decoration:underline;}
+.content li .cssPrice { color:#cd2a23; text-align:center;}
+*/
+
+.calss-center2 li,.calss-center li { float:left; padding:10px; text-align:center; position:relative;}
+.calss-center2 li div,.calss-center li div { display:block;}
+.calss-center2 li div a,.calss-center li div a { color:#315f80; text-decoration:none;}
+.calss-center2 div a:hover,.calss-center div a:hover { color:#cd2a23; text-decoration:underline;}
+.calss-center2 li p,.calss-center2 li p { display:block; text-align:center; padding-top:8px;}
+.calss-center2 li p img,.calss-center li p img { margin:0 10px;}
+.calss-center2 li .cssPrice,.calss-center li .cssPrice { color:#cd2a23; font-weight:bold; font-family:Verdana, Geneva, sans-serif;}
+.calss-center2 li .cssSmall-pic,.calss-center li .cssSmall-pic { display:block; border:#ccc solid 1px; padding:1px; margin-bottom:5px; overflow:hidden;}
+.calss-center2 li .cssSmall-pic:hover,.calss-center li .cssSmall-pic:hover { border:#cd2a23 solid 2px; padding:0;}
+.calss-center li .cssPrice { font-size:12px;}
+.calss-center2 li .cssPrice { font-size:18px;}
+.d_img_sale { position:absolute; top:0px; right:-8px;}
+
+

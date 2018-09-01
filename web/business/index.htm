@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>商家</title>
+<link rel="stylesheet" type="text/css" href="../style/pub.css" />
+<link rel="stylesheet" type="text/css" href="../style/footer.css" />
+<link rel="stylesheet" type="text/css" href="../style/business-top.css" />
+<link rel="stylesheet" type="text/css" href="../style/business.css" />
+<script src="../js/base.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="header">
+	<div class="site-nav layout">
+    	<div class="left">
+            <ul class="nav">
+                <li class="padd"><a href="#"><img class="block" src="../images/logo2.gif" /></a></li>
+                <li><a href="/index.aspx">首页</a></li>
+                <li><a href="/default.aspx">菜品订购</a></li>
+                <li><a href="javascript:void(0)">在线订餐</a></li>
+                <li><a href="javascript:void(0)">家宴预定</a></li>
+                <li><a href="javascript:void(0)">活动中心</a></li>
+                <li><a href="/news/1/">健康快报</a></li>
+                <li class="padd"><a href="javascript:void(0)">论坛</a></li>
+            </ul>
+        </div>
+        <div class="quick-menu">
+        	<ul>
+            	<li><a href="/user/login.aspx">登入</a>  <a href="/user/reg.aspx">注册</a></li>
+                <li class="myBasket" id="myBasket">
+                	<a href="/user/center.aspx" class="green">我的菜篮子</a>
+                    <div class="myBasket-dropDown" id="myBasketDropDown">
+                        <a href="/user/fav.aspx?t=0">我收藏的商品</a>
+                        <a href="/user/orderList.aspx?t=ongoing">进行中的交易</a>
+                    </div>
+                </li>
+                <li>
+                	<a href="/user/fav.aspx" class="black">收藏夹</a>
+                </li>
+                <li class="padd">
+                	<a href="/help/" class="black">帮助中心</a>
+                </li>
+            </ul>
+        </div>
+        <script type="text/javascript">
+			var T2=null;
+			_.get("myBasket").onmouseover=function(){clearTimeout(T2);this.className="myBasket sel";_.get("myBasketDropDown").style.display="block"}
+			_.get("myBasket").onmouseout=function(){T2=setTimeout(_.bind(this,function(){this.className="myBasket";_.get("myBasketDropDown").style.display="none"}),500);}
+		</script>
+    </div>
+    <div class="banner">商家banner  高度175  </div>
+    weblocation
+</div>
+
+
+<div class="content">
+	<div class="layout">
+        <div class="content-main left">
+            <div class="introduction plate">
+                <div class="txt black2">商家简介商家简介商家简介商家简介商家简介商家简介商家简介商家简介商家简
+                介商家简介商家简介商家简商家简介商家简介商家商家简介商家简介商家简介商家
+                简介商家简介商家简介商家简介商家简介商家简介商家简介商家简介商家简商家简介
+                商家简介商家商家简介商家简介商家简介商家简介商家简介商家简介商家简介商家简介商家简
+                介商家简介商家简介商家简商家简介商家简介商家商家简介商家简介商家简介商家简介商家简
+                介商家简介商家简介商家简介商家简介商家简介商家简介商家简商家简介商家简介商家商家简介商家简介商家简介商
+                家简介商家简介商家简介商家简介商家简介商家简介商家简介商家简介商家简商家简介商家简介商家</div>
+                <div class="businessPro-Search">
+                	<form>
+                        <div class="left"><input type="text" class="txt" /></div>
+                        <div class="right"><input type="submit" value="" class="businessPro-search-bt" /></div>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="plate">
+            	<div class="businessPro-head plate-head black2">
+                	该商家商品列表
+                </div>
+                <div class="businessPro-list def">
+                	<ul class="layout">
+                    	<li>
+                        	<a class="d-pic" href="#"><img src="../images/business/businessPro-search-bt.gif" width="157" height="107" /></a>
+                        	<div class="d-name"><a href="#">鲍汁鹅掌扣</a></div>
+                            <div>市场价：<del>￥65.50</del></div>
+                            <div class="d-price2">搜菜价：<span>￥65.50</span></div>
+                        </li>
+                        <li>
+                        	<a class="d-pic" href="#"><img src="../images/business/businessPro-search-bt.gif" width="157" height="107" /></a>
+                        	<div class="d-name"><a href="#">鲍汁f鹅掌扣</a></div>
+                            <div>市场价：<del>￥65.50</del></div>
+                            <div class="d-price2">搜菜价：<span>￥65.50</span></div>
+                        </li>
+                        <li>
+                        	<a class="d-pic" href="#"><img src="../images/business/businessPro-search-bt.gif" width="157" height="107" /></a>
+                        	<div class="d-name"><a href="#">鲍汁fs鹅掌扣</a></div>
+                            <div>市场价：<del>￥65.50</del></div>
+                            <div class="d-price2">搜菜价：<span>￥65.50</span></div>
+                        </li>
+                        <li>
+                        	<a class="d-pic" href="#"><img src="../images/business/businessPro-search-bt.gif" width="157" height="107" /></a>
+                        	<div class="d-name"><a href="#">鲍汁鹅掌扣</a></div>
+                            <div>市场价：<del>￥65.50</del></div>
+                            <div class="d-price2">搜菜价：<span>￥65.50</span></div>
+                        </li>
+                        <li>
+                        	<a class="d-pic" href="#"><img src="../images/business/businessPro-search-bt.gif" width="157" height="107" /></a>
+                        	<div class="d-name"><a href="#">鲍汁鹅掌扣</a></div>
+                            <div>市场价：<del>￥65.50</del></div>
+                            <div class="d-price2">搜菜价：<span>￥65.50</span></div>
+                        </li>
+                        <li>
+                        	<a class="d-pic" href="#"><img src="../images/business/businessPro-search-bt.gif" width="157" height="107" /></a>
+                        	<div class="d-name"><a href="#">鲍汁鹅掌扣</a></div>
+                            <div>市场价：<del>￥65.50</del></div>
+                            <div class="d-price2">搜菜价：<span>￥65.50</span></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            分页分页分页分页分页分页分页
+        </div>
+        <div class="sidebar right">
+        	<div class="business-plate plate">
+            	<div class="business-plate-head">
+                	<img class="block" src="../images/business/business-contact.gif" width="90" height="34" />
+                </div>
+                <div class="business-plate-main black2">
+                	<p>地址：下城区庆春路123号(近新华路)</p>
+                    <p>电话：0578-2124520</p>
+                    <p>传真：</p>
+                    <p>联系人：</p>
+                </div>
+            </div>
+            <div class="business-plate plate">
+            	<div class="business-plate-head">
+                	<img class="block" src="../images/business/business-categories.gif" width="90" height="34" />
+                </div>
+                <div class="business-plate-main business-categories">
+                	<a href="#" class="blue">水果</a><a href="#" class="blue">水果</a><a href="#" class="blue">水果</a><a href="#" class="blue">水果</a><a href="#" class="blue">水果</a>
+                    <a href="#" class="blue">水果</a><a href="#" class="blue">水果</a><a href="#" class="blue">水果</a>
+                    <a href="#" class="blue">水果</a><a href="#" class="blue">水果</a><a href="#" class="blue">水果</a>
+                    <a href="#" class="blue">水果</a><a href="#" class="blue">水果</a><a href="#" class="blue">水果</a>
+                    <a href="#" class="blue">水果</a><a href="#" class="blue">水果</a><a href="#" class="blue">水果</a><a href="#" class="blue">水果</a>
+                </div>
+            </div>
+            <div class="adv">
+            	广告广告广告广告广告广告广告
+            </div>
+        </div>
+    </div>
+    
+
+	
+</div>
+</body>
+</html>

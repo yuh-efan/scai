@@ -1,0 +1,5 @@
+E:\w网站\scw\DAL\obj\Debug\ResolveAssemblyReference.cache
+E:\w网站\scw\DAL\bin\Debug\WZ.DAL.dll
+E:\w网站\scw\DAL\bin\Debug\WZ.DAL.pdb
+E:\w网站\scw\DAL\obj\Debug\WZ.DAL.dll
+E:\w网站\scw\DAL\obj\Debug\WZ.DAL.pdb

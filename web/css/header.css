@@ -1,0 +1,117 @@
+﻿@charset "utf-8";
+
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td{margin:0px;padding:0px}
+
+body{font:12px/1.5em 宋体; color:#666}
+ul{list-style-type:none}
+
+a,a.black,.black{ color:#666;text-decoration:none;}
+a:hover,a.black:hover{color:#26a61d;text-decoration:underline}
+
+.green a,a.green,.green{color:#26a61d;text-decoration:none}
+.green a:hover,a.green:hover{color:#26a61d;text-decoration:underline}
+
+.red a,a.red,.red{color:#cc0000;text-decoration:none}
+.red a:hover,a.red:hover{color:#26a61d;text-decoration:underline}
+
+.brown a,a.brown,.brown{color:#111;text-decoration:none}
+.brown a:hover,a.brown:hover{color:#26a61d;text-decoration:underline}
+
+.white a,a.white,.white{color:#000;text-decoration:none}
+
+.left{ float:left}
+
+
+.gap{padding:0 10px}
+
+
+.site-nav .site-content, .header, .content{width:980px;margin:0 auto}
+
+/*site-nav*/
+.site-nav,.site-content,.myBasket a{background-image:url(file:///D|/Users/%E6%B2%88%E6%99%93%E6%B6%9B.%E6%B2%88%E6%99%93%E6%B6%9B-PC/Desktop/NumberOne/images/site-nav.png)}
+
+.site-nav{width:100%; background-color:#e5e5e5; background-repeat:repeat-x;}
+.site-nav .site-content{background-color:#e5e5e5; background-repeat:repeat-x;line-height:28px; overflow:auto}
+	.login-info{float:left}
+	
+	.quick-menu{ float:right}
+	.quick-menu li{float:left;padding:0 5px}
+		li.myBasket a{padding-right:12px; background-position:right -38px; background-repeat:no-repeat}
+		li.site-help {padding-right:0}
+		
+
+/*logo search*/
+.search-content{padding-top:28px; overflow:auto;width:100%}
+	.search-wrap{float:left;padding-left:90px; position:relative;}
+		.search-category{position:absolute;top:5px; z-index:11; font-size:14px}
+			.search-category a.search-category-sel,.search-category a.search-category-sel span{background:url(file:///D|/Users/%E6%B2%88%E6%99%93%E6%B6%9B.%E6%B2%88%E6%99%93%E6%B6%9B-PC/Desktop/NumberOne/images/category-bt-bg.gif) no-repeat; color:#666; font-weight:bold; }
+			.search-category a.search-category-sel:hover{color:#666; font-weight:bold}
+			.search-category a.search-category-sel span{background-position:right;}
+			
+			.search-category a{padding-left:15px; text-decoration:none; float:left;color:#26a61d;}
+			.search-category a:hover{color:#26a61d; text-decoration:underline}
+				.search-category a span{padding-right:15px;display:block; line-height:21px;}
+				
+		.search-text{margin-top:25px}
+		.search-text ul{ height:40px; float:left}
+		.search-text ul li{float:left;background:url(file:///D|/Users/%E6%B2%88%E6%99%93%E6%B6%9B.%E6%B2%88%E6%99%93%E6%B6%9B-PC/Desktop/NumberOne/images/inp-bg.png) no-repeat}
+		.search-text ul li.search-bg-l{width:11px; height:100%}
+		.search-text ul li.search-bg-m{ background-repeat:repeat-x; background-position:0 -42px;width:490px;height:100%; position:relative;z-index:10}
+		.search-text ul li.search-bg-r{ background-repeat:no-repeat;background-position:0 -84px;width:4px;height:100%}
+				.search-inp{border:0px; width:385px;margin-top:7px; font-size:14px;padding:6px 0px 4px;color:#666;padding-right:1px}
+				.search-bt{background:url(file:///D|/Users/%E6%B2%88%E6%99%93%E6%B6%9B.%E6%B2%88%E6%99%93%E6%B6%9B-PC/Desktop/NumberOne/images/search-bt.gif) no-repeat; border:0px; width:102px; height:32px;position:absolute; right:0px; top:4px}
+		.search-advanced{ float:left; padding:12px 0 0 20px}
+				
+/*channel*/
+.channel,.channel-l,.channel-r,.channel-cart-l,.channel-cart-r,.channel-cart-m,.goBuy,.cart-pic{background:url(file:///D|/Users/%E6%B2%88%E6%99%93%E6%B6%9B.%E6%B2%88%E6%99%93%E6%B6%9B-PC/Desktop/NumberOne/images/channel.png) no-repeat}
+
+.channel{position:relative;height:47px; background-position:0px -96px; background-repeat:repeat-x}
+	
+	.channel-l{position:absolute;top:0px;left:-26px; width:26px; height:47px;}
+	.channel-r{position:absolute;top:0px;right:-26px; width:26px; height:47px; background-position:0px -48px}
+	.channel-content{padding:5px 0 0 30px; font-size:14px;font-weight:bold; float:left}
+	.channel-content a{display:inline-block; padding:8px 20px 10px;color:#FFF; text-decoration:none}
+	.channel-content a:hover{ background-color:#FFF;color:#26a61d}
+	
+	.channel-cart{float:right; padding-top:9px;}
+	.channel-cart li{float:left}
+		.channel-cart-l{ background-position:left -144px; width:4px; height:23px}
+		.channel-cart-r{ background-position:right -144px; width:4px; height:23px}
+		.channel-cart-m{ background-position:left -171px; background-repeat:repeat-x; height:23px;}
+			.channel-cart-m ul{padding-top:3px}
+				.goBuy{ background-position:40px -216px; padding-right:18px}
+				.shop-N{font-weight:bold; display:inline-block; padding:0 5px}
+				.cart-pic{background-position:left -194px; width:18px; height:15px; padding-right:15px}
+				
+
+/*hot-Search*/
+.hot-search{ background-color:#ebeaeb;  line-height:35px; height:35px; padding:0px 20px; }
+	.hot-search-l{float:left;}
+	.hot-search-l span{font-weight:bold;}
+	.hot-search-l a{margin-right:8px}
+	.hot-search-r{float:right;}
+	.hot-search-r li{float:right;}
+	
+
+.content{}
+	.content-one{background:url(file:///D|/Users/%E6%B2%88%E6%99%93%E6%B6%9B.%E6%B2%88%E6%99%93%E6%B6%9B-PC/Desktop/NumberOne/images/content-one-bg.gif) repeat-x;width:100%; overflow:auto;}
+		.category{float:left; position:relative}
+			.category-pos{position:absolute; top:0px; width:63px;height:63px; background:url(file:///D|/Users/%E6%B2%88%E6%99%93%E6%B6%9B.%E6%B2%88%E6%99%93%E6%B6%9B-PC/Desktop/NumberOne/images/category-pic.gif)}
+			.category-c{ border:solid 4px #0b8201; width:196px;min-height:420px;height:auto !important;height:420px;background-color:#e5e5e5; margin-top:6px;}
+				.category-t{ background:url(file:///D|/Users/%E6%B2%88%E6%99%93%E6%B6%9B.%E6%B2%88%E6%99%93%E6%B6%9B-PC/Desktop/NumberOne/images/category-title.gif); width:109px; height:24px; margin:10px 0 5px 75px}
+			.category-c li{background:url(file:///D|/Users/%E6%B2%88%E6%99%93%E6%B6%9B.%E6%B2%88%E6%99%93%E6%B6%9B-PC/Desktop/NumberOne/images/category-line.gif) no-repeat center bottom; padding:0 10px 0 13px;}
+			.category-c dl{background:url(file:///D|/Users/%E6%B2%88%E6%99%93%E6%B6%9B.%E6%B2%88%E6%99%93%E6%B6%9B-PC/Desktop/NumberOne/images/category-list-bg.gif) no-repeat 0 12px;overflow:hidden;padding:8px 10px 0px; height:22px;}
+			.category-c dl dt{float:left}
+			.category-c dl dd{float:left;padding-left:10px; width:115px;}
+			
+			.category-c dl dt a{font-weight:bold;}
+			.category-c dl dd a{margin-right:6px;height:20px;display:inline-block;color:#999}
+			.category-c dl dd a:hover{color:#999}
+			
+		.content-one-c{ float:right;}
+	
+
+			
+	
+	
+		

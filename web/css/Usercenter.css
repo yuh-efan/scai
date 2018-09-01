@@ -1,0 +1,132 @@
+﻿
+/*   通用css   */
+.grmes h1,.grmes-bootom,.box-left h2,.right h1 { background:url(../images/User.gif) no-repeat;}
+.flow-steps,.flow-steps-2,.flow-steps-3 { height:57px; background:url(../images/shopping/Flow.gif) no-repeat; margin:10px 0 20px 0;}
+
+.left { float:left; width:191px;}
+.right { float:right; width:785px;}
+	.right h1 { height:35px; background-position:0 -89px;}
+
+/*  左侧导航css  */
+.grmes { width:191px;}
+	.grmes h1 { height:43px;}
+	.grmes-main { border-left:#eaeaea solid 5px; border-right:#eaeaea solid 5px; padding:3px 15px 0 15px;}
+		.grmes-main li { padding-bottom:1px;line-height:1.5em;}
+		.grmes-main li .size14 { font-size:14px;}
+	.grmes-bootom { height:14px; background-position:0 -44px;}
+.sidebar-box { border-bottom:#ddd solid 1px; border-left:#ddd solid 1px; border-right:#ddd solid 1px; margin:3px 0; }
+	.box-left h2 { height:29px; line-height:29px; background-position:0 -59px; padding-left:15px; font-weight:bold; border-top:#ddd solid 1px;}
+		.box-left h2 img { margin-right:5px; vertical-align:middle;}
+		.box-left h2 span { display:inline-block;}
+	.navlist { padding:5px 10px;}
+		.navlist li { height:25px; line-height:25px; border-bottom:#ddd solid 1px; background:url(../images/index/leftsidebar_03.gif) no-repeat 8px -36px; padding-left:20px; color:#c90304;}
+		.navlist .no { border-bottom:0;}
+		.navlist li.sel{ background-color:#02A319;  font-weight:bold}
+			.navlist li.sel a{color:#fff}
+
+/*  用户中心首页  */
+.Info { padding:5px 10px 10px 10px;}
+	.User-box { padding-bottom:10px;}
+	.User-box h3,.Sale h3 { height:28px; line-height:28px; background:#eaeaea; font-weight:bold; padding-right:10px;}
+		.User-box h3 span,.Sale h3 span { float:left; display:block; background:#02a319; padding:0 30px; color:#fff; font-size:14px;}
+.ordertable { padding:10px 0; color:#666;}
+.ordertable td,th { height:27px; line-height:27px; text-align:center; padding:3px;}
+.ordertable td { border-bottom:#ddd solid 1px;}
+.ordertable p { text-align:right; padding-top:10px; }
+.ordertable p em {color:#c90304; font-size:24px; font-family:Georgia, "Times New Roman", Times, serif;}
+.FAQ { padding:20px;}
+.FAQ li { float:left; width:354px; height:25px; line-height:25px;}
+.FAQ .newsdate{color:#999}
+.Sale { padding-top:10px;}
+.Hot-products { padding-top:15px;}
+.Hot-products li { float:left; width:129px; text-align:center; padding:0 10px;}
+	.Hot-products li .products-pic { display:block; border:#ccc solid 1px; padding:1px; width:auto; height:auto; margin:0;}
+	.Hot-products li .products-pic:hover { border:#cd2a23 solid 1px;}
+	
+/*  订单详情  */
+.orderdiv { padding:10px 0;}
+.orderdiv caption { height:30px; line-height:30px; background:#ccc; text-align:left; font-weight:bold; padding-left:10px;}
+.orderdiv tbody th { background:none repeat scroll 0 0 #F7F7F7; width:21%; border:1px solid #dddddd; padding-left:1%;}
+.orderdiv tbody td { height:30px; line-height:30px; width:27%; border:#ddd solid 1px; padding-left:1%}
+.Note h5 { height:25px; line-height:25px; background:#F7F7F7; font-weight:bold; padding-left:10px;}
+.Note p { min-height:30px; height:auto !important; height:30px; padding:10px; }
+
+/*  编辑个人档案  */
+.Edit_Info { padding:15px 0;}
+.Edit_Info h4 { padding-left:15px; color:#999;}
+.Edit_Info .lefttd { width:170px; padding-right:5px; text-align:right; color:#666;}
+.Edit_Info td { padding-top:13px;}
+.Edit_Info td span { color:#f00; padding:0 5px;}
+.Edit_Info input { color:#333; padding:2px; height:16px; vertical-align:middle; margin-right:3px;}
+.Edit_Info select { color:#333; font-size:12px;}
+.Edit_Info em { color:#999; padding:0 5px;}
+.Edit_Info h5 { height:30px; line-height:30px; background:#f7f7f7; padding-left:15px;}
+.Eating li { float:left; width:140px; height:28px; overflow:hidden;}
+.btns { padding-top:20px; margin-left:175px;}
+.btns .btnssun { width:59px; height:21px; background:url(../images/Usercenter/sun.gif) no-repeat; border:0;}
+
+/*  修改收货地址  */
+.address { margin:10px; padding:10px 50px; background:#eee;}
+.address li { padding-bottom:5px;}
+.Operation { float:right;}
+.Operation li { float:left; margin-right:10px; display:inline;}
+
+/*  所有的交易  */
+.User-box cite { float:right; width:200px; text-align:right; color:#999;}
+
+/*  我的会员积分  */
+.User-box h6 { height:20px; line-height:20px; font-weight:bold;}
+
+/*  我的优惠券  */
+.msg { padding:15px; color:#666;}
+.msg h6 { color:#f00;}
+
+/*  帐户余额  */
+.Sufficient { margin-top:20px; padding-top:10px; border-top:#ddd solid 1px; text-align:right;}
+
+/*  我的商品评论  */
+
+/*#no-1,#no-01 { background-position:20px 2px;}
+#no-2,#no-02 { background-position:20px -33px;}
+#no-3,#no-03 { background-position:20px -68px;}
+#no-4,#no-04 { background-position:20px -106px;}
+#no-5,#no-05 { background-position:20px -141px;}*/
+.Commentary { padding-top:10px;}
+.Commentary td { padding:10px 0; border-bottom:#ddd dashed 1px;}
+.com-right { width:129px; text-align:center;}
+.Grading2 { height:20px; background:url(../images/item_detail/Grading.gif) no-repeat; margin-left:5px;}
+.Explanation { background:#f7f7f7; border:#ddd solid 1px; padding:5px 10px; color:#666;}
+.pic { width:100px; text-align:center;}
+.products-pic { display:block; border:#ddd solid 1px; padding:1px; width:46px; height:46px; overflow:hidden; margin:0 auto;}
+.center { text-align:center;}
+.Comment-box { float:left; border:#ddd solid 1px; width:220px; margin-top:15px; margin-right:20px; display:inline;}
+	.Comment-main { padding:10px; height:65px;}
+		.Comment-main p { float:left; width:146px;}
+		.products-pic2{ float:left}
+		.Comment-main span,.Comment-main em,.Comment-pic { display:block; width:136px; padding-left:10px;}
+.Commentary2 { padding-left:10px;}
+.Appraise { margin:10px; padding:10px 50px;}
+.Appraise li { float:left; width:200px; padding-bottom:5px; height:20px; background:url(../images/item_detail/Grading.gif) no-repeat;}
+.message { display:block; padding-top:10px !important; color:#999;}
+
+ /*  提交订单完成  */
+.flow-steps-3 { background-position: center -114px;}
+.Completion { padding-bottom:20px;}
+	.Completion p { text-align:center; padding:0; color:#666;}
+	.gx { height:50px; padding-bottom:10px !important;}
+	.Co-txt { height:30px; line-height:30px;}
+	
+.anniucss4 { background:url(../images/Usercenter/Purchase.gif) no-repeat; width:59px; height:21px; border:0;}
+
+.anniucss,.anniucss3,.anniucss2,.anniucss5 { height:21px; line-height:21px; color:#fff; border:0;}
+.anniucss2,.anniucss5 { width:100px;}
+.anniucss,.anniucss3 { width:59px;}
+.anniucss { background:url(../images/sun.gif) no-repeat;}
+.anniucss3 { background:url(../images/sun3.gif) no-repeat;}
+.anniucss2 { background:url(../images/sun2.gif) no-repeat;}
+.anniucss5 { background:url(../images/sun4.gif) no-repeat;}
+
+.d_list1{padding-top:15px; padding-bottom:15px;float:left}	
+.d_list1 li{width:129px; padding:0 10px;}
+
+.ce00{color:#e00;}

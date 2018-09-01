@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="caiPuMsg.aspx.cs" Inherits="WZ.Web.ajax.caiPuMsg" %>

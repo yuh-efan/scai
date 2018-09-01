@@ -1,0 +1,20 @@
+
+/*   通用css   */
+.Tel,.help ul li,.help { background:url(../images/bg.gif) no-repeat;}
+
+
+/*   页面通用尾部css   */
+.footer { height:300px; width:100%; background:#f3f3f3 url(../images/footer_bg.gif) repeat-x;}
+	.footer-main { margin:0 auto; width:960px; padding-top:20px;}
+	.helpIntro { width:960px; padding-bottom:25px;}
+		.Tel { float:left; width:209px; height:140px; background-position:0 -233px;}
+		.help { float:right; width:723px; background-position:0 -374px;}
+		.help ul { float:left; padding-top:40px; padding-left:5px; width:126px; padding-right:17px; overflow:hidden;}
+		.help ul li { height:20px; line-height:20px; padding-left:15px; background-position:-212px -237px;}
+		.helpAbout { padding-right:0px !important;}
+	.footer-nav { height:30px; line-height:30px; background:#ddd; text-align:center;}
+	.footer-nav a { margin:0 10px;}
+	.copyright { height:85px;}
+		.copyright-txt { float:left; width:50%; padding-top:25px;}
+		.Partner { float:left; width:50%; padding-top:20px;}
+		.Partner li { float:right; padding-left:10px;}

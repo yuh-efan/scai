@@ -1,0 +1,19 @@
+body,.site-nav{background:url(../images/body-bg2.gif) repeat-x;}
+
+
+
+.site-nav{height:44px; line-height:44px;}
+
+	.site-nav .padd, {padding-right:0; background:none}
+	
+	.quick-menu{float:right;}
+	.nav li,.quick-menu li{float:left; background:url(../images/gap.gif) no-repeat right; padding:0 10px;}
+	.quick-menu li.sel{background:url(../images/myBasket-sel-bg2.gif) no-repeat 0 6px;}
+	.quick-menu li.myBasket{ position:relative; z-index:99}
+	.quick-menu li.myBasket .green{padding-right:12px; background:url(../images/point-down.gif) no-repeat right}
+	
+	/*我的菜篮子下拉*/
+	.myBasket-dropDown{ line-height:1.8em;padding-bottom:5px; text-align:center; width:90px; border:solid 1px #ccc;border-top:0; background-color:#fff; position:absolute; top:34px;left:0px; display:none}
+	.myBasket-dropDown a{ display:block}
+	
+	.banner{height:175px;width:100%; overflow:hidden}

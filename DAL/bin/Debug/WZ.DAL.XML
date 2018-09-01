@@ -1,0 +1,703 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WZ.DAL</name>
+    </assembly>
+    <members>
+        <member name="T:WZ.Common.OleDbProvider">
+            <summary>
+            OleDb 驱动 
+            各成员方法注释在 IDbProvider接口
+            </summary>
+        </member>
+        <member name="T:WZ.Common.IDbProvider">
+            <summary>
+            数据种驱动接口
+            </summary>
+        </member>
+        <member name="M:WZ.Common.IDbProvider.AddParam(System.String,System.Object)">
+            <summary>
+            添加参数 Parameter
+            </summary>
+            <param name="pParamName">字段名:如 @ProName</param>
+            <param name="pParamText">内容:如 电视机</param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.IDbProvider.AddParam(System.String,System.Data.DbType,System.Object)">
+            <summary>
+            添加参数 Parameter
+            </summary>
+            <param name="pParamName">字段名:如 @ProName</param>
+            <param name="pDbType">类型:如 DbType.Int32</param>
+            <param name="pParamText">内容:如 电视机</param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.IDbProvider.AddParam(System.String,System.Data.DbType,System.Object,System.Int32)">
+            <summary>
+            添加参数 Parameter
+            </summary>
+            <param name="pParamName">字段名:如 @ProName</param>
+            <param name="pDbType">类型:如 DbType.Int32</param>
+            <param name="pParamText">内容:如 电视机</param>
+            <param name="pParamSize">字段大小</param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.IDbProvider.GetArrParam(System.Int32)">
+            <summary>
+            获取一个 Parameter 数组
+            </summary>
+        </member>
+        <member name="M:WZ.Common.IDbProvider.NewConnection">
+            <summary>
+            new SqlConnection
+            </summary>
+            <param name="pStrConn"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.IDbProvider.NewDataAdapter">
+            <summary>
+            new DbDataAdapter
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:WZ.Common.IDbProvider.StrConn">
+            <summary>
+            连接字符串
+            </summary>
+        </member>
+        <member name="T:WZ.Common.TransHelpParam">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:WZ.Common.TransHelpParam.#ctor(System.String,System.Data.IDataParameter[])">
+            <summary>
+            
+            </summary>
+            <param name="pCmdType">IDataParameter 参数数组</param>
+        </member>
+        <member name="M:WZ.Common.TransHelpParam.#ctor(System.String,System.Data.CommandType)">
+            <summary>
+            
+            </summary>
+            <param name="pCmdType">设置CommandType</param>
+        </member>
+        <member name="M:WZ.Common.TransHelpParam.#ctor(System.String,System.Data.CommandType,System.Data.IDataParameter[])">
+            <summary>
+            
+            </summary>
+            <param name="pCmdType">设置CommandType</param>
+            <param name="pArrParm">IDataParameter 参数数组</param>
+        </member>
+        <member name="P:WZ.Common.TransHelpParam.CmdType">
+            <summary>
+            指定如何解释命令字符串
+            默认CommandType.Text
+            </summary>
+        </member>
+        <member name="P:WZ.Common.TransHelpParam.ArrParm">
+            <summary>
+            表示 Command 对象的参数
+            默认null
+            </summary>
+        </member>
+        <member name="T:WZ.Common.SqlServerProvider">
+            <summary>
+            SqlServer 驱动
+            各成员方法注释在 IDbProvider接口
+            </summary>
+        </member>
+        <member name="T:WZ.Common.DbHelpParam">
+            <summary>
+            DbHelp 接收参数专用类
+            </summary>
+        </member>
+        <member name="M:WZ.Common.DbHelpParam.#ctor(System.String,System.Data.IDataParameter[])">
+            <summary>
+            
+            </summary>
+            <param name="pCmdType">IDataParameter 参数数组</param>
+        </member>
+        <member name="M:WZ.Common.DbHelpParam.#ctor(System.String,System.Data.CommandType)">
+            <summary>
+            
+            </summary>
+            <param name="pCmdType">设置CommandType</param>
+        </member>
+        <member name="M:WZ.Common.DbHelpParam.#ctor(System.String,System.Data.CommandType,System.Data.IDataParameter[])">
+            <summary>
+            
+            </summary>
+            <param name="pCmdType">设置CommandType</param>
+            <param name="pArrParm">IDataParameter 参数数组</param>
+        </member>
+        <member name="M:WZ.Common.DbHelpParam.#ctor(System.String,System.Data.CommandType,System.Data.IDataParameter[],WZ.Common.IDbProvider)">
+            <summary>
+            
+            </summary>
+            <param name="pCmdType">设置CommandType</param>
+            <param name="pAParm">IDataParameter 参数数组</param>
+            <param name="pDbProvider">继承与 IDbProvider 的对象 可以是 AccressProvider,OleDbProvider 或 SqlServerProvider等</param>
+        </member>
+        <member name="P:WZ.Common.DbHelpParam.CmdType">
+            <summary>
+            指定如何解释命令字符串
+            默认CommandType.Text
+            </summary>
+        </member>
+        <member name="P:WZ.Common.DbHelpParam.ArrParm">
+            <summary>
+            表示 Command 对象的参数
+            默认null
+            </summary>
+        </member>
+        <member name="P:WZ.Common.DbHelpParam.DbProvider">
+            <summary>
+            继承与 IDbProvider 的对象 可以是 AccressProvider,OleDbProvider 或 SqlServerProvider等
+            默认DbHelp.Def
+            </summary>
+        </member>
+        <member name="T:WZ.Common.AccessProvider">
+            <summary>
+            Address OleDbConnection
+            </summary>
+        </member>
+        <member name="M:WZ.Common.AccessProvider.ReturnConnection(System.Data.IDbConnection)">
+            <summary>
+            UseList > FreeList
+            </summary>
+            <param name="pConn"></param>
+        </member>
+        <member name="T:WZ.Common.DbHelp">
+            <summary>
+            数据库操作
+            </summary>
+        </member>
+        <member name="M:WZ.Common.DbHelp.Update(System.String)">
+            <summary>
+            插入,更新或删除
+            </summary>
+            <param name="pSQL">sql 语句</param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.DbHelp.Update(System.String,System.Data.IDataParameter[])">
+            <summary>
+            插入,更新或删除
+            </summary>
+            <param name="pSQL">sql 语句</param>
+            <param name="pArrParam">IDataParameter 参数数组</param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.DbHelp.Update(System.String,System.Data.CommandType,System.Data.IDataParameter[])">
+            <summary>
+            插入,更新或删除
+            </summary>
+            <param name="pSQL">sql 语句</param>
+            <param name="pCmdType">设置CommandType</param>
+            <param name="pArrParam">IDataParameter 参数数组</param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.DbHelp.Update(WZ.Common.IDbHelpParam)">
+            <summary>
+            插入,更新或删除
+            </summary>
+            <param name="pDbHelpParam">DbHelp 接收参数专用类</param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.DbHelp.GetDataTable(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="pSQL">sql 语句</param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.DbHelp.GetDataTable(System.String,System.Data.CommandType)">
+            <summary>
+            
+            </summary>
+            <param name="pSQL">sql 语句</param>
+            <param name="pCmdType">设置CommandType</param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.DbHelp.GetDataTable(System.String,System.Data.IDataParameter[])">
+            <summary>
+            
+            </summary>
+            <param name="pSQL">sql 语句</param>
+            <param name="pArrParam">IDataParameter 参数数组</param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.DbHelp.GetDataTable(System.String,System.Data.CommandType,System.Data.IDataParameter[])">
+            <summary>
+            
+            </summary>
+            <param name="pSQL">sql 语句</param>
+            <param name="pCmdType">设置CommandType</param>
+            <param name="pArrParam">IDataParameter 参数数组</param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.DbHelp.GetDataTable(WZ.Common.IDbHelpParam)">
+            <summary>
+            
+            </summary>
+            <param name="pDbHelpParam">DbHelp 接收参数专用类</param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.DbHelp.GetDataSet(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="pSQL">sql 语句</param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.DbHelp.GetDataSet(System.String,System.Data.IDataParameter[])">
+            <summary>
+            
+            </summary>
+            <param name="pSQL">sql 语句</param>
+            <param name="pArrParam">IDataParameter 参数数组</param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.DbHelp.GetDataSet(System.String,System.Data.CommandType,System.Data.IDataParameter[])">
+            <summary>
+            
+            </summary>
+            <param name="pSQL">sql 语句</param>
+            <param name="pCmdType">设置CommandType</param>
+            <param name="pArrParam">IDataParameter 参数数组</param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.DbHelp.GetDataSet(WZ.Common.IDbHelpParam)">
+            <summary>
+            
+            </summary>
+            <param name="pDbHelpParam">DbHelp 接收参数专用类</param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.DbHelp.GetDataTable_Paging(System.String,System.Int32,System.Int32)">
+            <summary>
+            用于分页 返回当前页的DataTable
+            </summary>
+            <param name="pSQL">sql 语句</param>
+            <param name="pPageIndex">当前页码</param>
+            <param name="pPageSize">每页记录数</param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.DbHelp.GetDataTable_Paging(WZ.Common.IDbHelpParam,System.Int32,System.Int32)">
+            <summary>
+            用于分页 返回当前页的DataTable
+            </summary>
+            <param name="pDbHelpParam">DbHelp 接收参数专用类</param>
+            <param name="pPageIndex">当前页码</param>
+            <param name="pPageSize">每页记录数</param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.DbHelp.Read(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="pSQL">sql 语句</param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.DbHelp.Read(System.String,System.Data.IDataParameter[])">
+            <summary>
+            
+            </summary>
+            <param name="pSQL">sql 语句</param>
+            <param name="pArrParam">IDataParameter 参数数组</param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.DbHelp.Read(WZ.Common.IDbHelpParam)">
+            <summary>
+            
+            </summary>
+            <param name="pDbHelpParam">DbHelp 接收参数专用类</param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.DbHelp.Scalar(System.String)">
+            <summary>
+            第一行第一列 可能为null
+            </summary>
+            <param name="pSQL">sql 语句</param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.DbHelp.Scalar(System.String,System.Data.IDataParameter[])">
+            <summary>
+            第一行第一列 可能为null
+            </summary>
+            <param name="pSQL">sql 语句</param>
+            <param name="pArrParam">IDataParameter 参数数组</param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.DbHelp.Scalar(System.String,System.Data.CommandType,System.Data.IDataParameter[])">
+            <summary>
+            第一行第一列 可能为null
+            </summary>
+            <param name="pSQL">sql 语句</param>
+            <param name="pCmdType">设置CommandType</param>
+            <param name="pArrParam">IDataParameter 参数数组</param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.DbHelp.Scalar(WZ.Common.IDbHelpParam)">
+            <summary>
+            第一行第一列 可能为null
+            </summary>
+            <param name="pDbHelpParam">DbHelp 接收参数专用类</param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.DbHelp.First(System.String)">
+            <summary>
+            第一行第一列 找不到时默认返回 string.Empty
+            </summary>
+            <param name="pSQL">sql 语句</param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.DbHelp.First(System.String,System.String)">
+            <summary>
+            第一行第一列 找不到时默认返回 str_return
+            </summary>
+            <param name="pSQL">sql 语句</param>
+            <param name="str_return"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.DbHelp.First(System.String,System.Data.IDataParameter[])">
+            <summary>
+            第一行第一列 找不到时默认返回 string.Empty
+            </summary>
+            <param name="pSQL">sql 语句</param>
+            <param name="pArrParam">IDataParameter 参数数组</param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.DbHelp.First(System.String,System.Data.IDataParameter[],System.String)">
+            <summary>
+            第一行第一列 找不到时默认返回 pReturn
+            </summary>
+            <param name="pSQL">sql 语句</param>
+            <param name="pArrParam">IDataParameter 参数数组</param>
+            <param name="pReturn"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.DbHelp.First(System.String,System.Data.CommandType,System.Data.IDataParameter[],System.String)">
+            <summary>
+            第一行第一列 找不到时默认返回 pReturn
+            </summary>
+            <param name="pSQL">sql 语句</param>
+            <param name="pCmdType">设置CommandType</param>
+            <param name="pArrParam">IDataParameter 参数数组</param>
+            <param name="pReturn"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.DbHelp.First(WZ.Common.IDbHelpParam,System.String)">
+            <summary>
+            第一行第一列 找不到时默认返回 pReturn
+            </summary>
+            <param name="pDbHelpParam">DbHelp 接收参数专用类</param>
+            <param name="pReturn"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.DbHelp.ExecuteTrans(WZ.Common.IDbHelpParam,WZ.Common.DbHelp.ExecuteTransHandler,WZ.Common.DbHelp.ITransM)">
+            <summary>
+            事务处理
+            </summary>
+            <param name="pDbHelpParam">DbHelp 接收参数专用类</param>
+            <param name="pTrands">要处理事务的方法</param>
+            <param name="pObj">传参数</param>
+        </member>
+        <member name="M:WZ.Common.DbHelp.SetCmd(WZ.Common.IDbHelpParam,System.Data.IDbCommand,System.Data.IDbConnection)">
+            <summary>
+            设置 DbCommand
+            </summary>
+            <param name="pDbHelpParam">DbHelp 接收参数专用类</param>
+            <param name="pCommand">IDbCommand</param>
+            <param name="pConn">IDbConnection</param>
+        </member>
+        <member name="P:WZ.Common.DbHelp.Def">
+            <summary>
+            返回默认数据库
+            </summary>
+        </member>
+        <member name="T:WZ.Common.DbHelp.ExecuteTransHandler">
+            <summary>
+            
+            </summary>
+            <param name="transHelp">TransHelp 可以在事务中具有增,删,改查功能</param>
+            <param name="obj">object参数</param>
+            <returns>0:回滚事务 1:提交事务</returns>
+        </member>
+        <member name="T:WZ.Common.DefaultHelp">
+            <summary>
+            数据库操作
+            </summary>
+        </member>
+        <member name="M:WZ.Common.DefaultHelp.Update(System.String)">
+            <summary>
+            插入,更新或删除
+            </summary>
+            <param name="pSQL">sql 语句</param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.DefaultHelp.Update(System.String,System.Data.IDataParameter[])">
+            <summary>
+            插入,更新或删除
+            </summary>
+            <param name="pSQL">sql 语句</param>
+            <param name="pArrParam">IDataParameter 参数数组</param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.DefaultHelp.Update(System.String,System.Data.CommandType,System.Data.IDataParameter[])">
+            <summary>
+            插入,更新或删除
+            </summary>
+            <param name="pSQL">sql 语句</param>
+            <param name="pCmdType">设置CommandType</param>
+            <param name="pArrParam">IDataParameter 参数数组</param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.DefaultHelp.Update(WZ.Common.IDbHelpParam)">
+            <summary>
+            插入,更新或删除
+            </summary>
+            <param name="pDbHelpParam">DbHelp 接收参数专用类</param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.DefaultHelp.GetDataTable(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="pSQL">sql 语句</param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.DefaultHelp.GetDataTable(System.String,System.Data.CommandType)">
+            <summary>
+            
+            </summary>
+            <param name="pSQL">sql 语句</param>
+            <param name="pCmdType">设置CommandType</param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.DefaultHelp.GetDataTable(System.String,System.Data.IDataParameter[])">
+            <summary>
+            
+            </summary>
+            <param name="pSQL">sql 语句</param>
+            <param name="pArrParam">IDataParameter 参数数组</param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.DefaultHelp.GetDataTable(System.String,System.Data.CommandType,System.Data.IDataParameter[])">
+            <summary>
+            
+            </summary>
+            <param name="pSQL">sql 语句</param>
+            <param name="pCmdType">设置CommandType</param>
+            <param name="pArrParam">IDataParameter 参数数组</param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.DefaultHelp.GetDataTable(WZ.Common.IDbHelpParam)">
+            <summary>
+            
+            </summary>
+            <param name="pDbHelpParam">DbHelp 接收参数专用类</param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.DefaultHelp.GetDataSet(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="pSQL">sql 语句</param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.DefaultHelp.GetDataSet(System.String,System.Data.IDataParameter[])">
+            <summary>
+            
+            </summary>
+            <param name="pSQL">sql 语句</param>
+            <param name="pArrParam">IDataParameter 参数数组</param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.DefaultHelp.GetDataSet(System.String,System.Data.CommandType,System.Data.IDataParameter[])">
+            <summary>
+            
+            </summary>
+            <param name="pSQL">sql 语句</param>
+            <param name="pCmdType">设置CommandType</param>
+            <param name="pArrParam">IDataParameter 参数数组</param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.DefaultHelp.GetDataSet(WZ.Common.IDbHelpParam)">
+            <summary>
+            
+            </summary>
+            <param name="pDbHelpParam">DbHelp 接收参数专用类</param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.DefaultHelp.GetDataTable_Paging(System.String,System.Int32,System.Int32)">
+            <summary>
+            用于分页 返回当前页的DataTable
+            </summary>
+            <param name="pSQL">sql 语句</param>
+            <param name="pPageIndex">当前页码</param>
+            <param name="pPageSize">每页记录数</param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.DefaultHelp.GetDataTable_Paging(WZ.Common.IDbHelpParam,System.Int32,System.Int32)">
+            <summary>
+            用于分页 返回当前页的DataTable
+            </summary>
+            <param name="pDbHelpParam">DbHelp 接收参数专用类</param>
+            <param name="pPageIndex">当前页码</param>
+            <param name="pPageSize">每页记录数</param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.DefaultHelp.Read(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="pSQL">sql 语句</param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.DefaultHelp.Read(System.String,System.Data.IDataParameter[])">
+            <summary>
+            
+            </summary>
+            <param name="pSQL">sql 语句</param>
+            <param name="pArrParam">IDataParameter 参数数组</param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.DefaultHelp.Read(WZ.Common.IDbHelpParam)">
+            <summary>
+            
+            </summary>
+            <param name="pDbHelpParam">DbHelp 接收参数专用类</param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.DefaultHelp.Scalar(System.String)">
+            <summary>
+            第一行第一列 可能为null
+            </summary>
+            <param name="pSQL">sql 语句</param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.DefaultHelp.Scalar(System.String,System.Data.IDataParameter[])">
+            <summary>
+            第一行第一列 可能为null
+            </summary>
+            <param name="pSQL">sql 语句</param>
+            <param name="pArrParam">IDataParameter 参数数组</param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.DefaultHelp.Scalar(System.String,System.Data.CommandType,System.Data.IDataParameter[])">
+            <summary>
+            第一行第一列 可能为null
+            </summary>
+            <param name="pSQL">sql 语句</param>
+            <param name="pCmdType">设置CommandType</param>
+            <param name="pArrParam">IDataParameter 参数数组</param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.DefaultHelp.Scalar(WZ.Common.IDbHelpParam)">
+            <summary>
+            第一行第一列 可能为null
+            </summary>
+            <param name="pDbHelpParam">DbHelp 接收参数专用类</param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.DefaultHelp.First(System.String)">
+            <summary>
+            第一行第一列 找不到时默认返回 string.Empty
+            </summary>
+            <param name="pSQL">sql 语句</param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.DefaultHelp.First(System.String,System.String)">
+            <summary>
+            第一行第一列 找不到时默认返回 str_return
+            </summary>
+            <param name="pSQL">sql 语句</param>
+            <param name="str_return"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.DefaultHelp.First(System.String,System.Data.IDataParameter[])">
+            <summary>
+            第一行第一列 找不到时默认返回 string.Empty
+            </summary>
+            <param name="pSQL">sql 语句</param>
+            <param name="pArrParam">IDataParameter 参数数组</param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.DefaultHelp.First(System.String,System.Data.IDataParameter[],System.String)">
+            <summary>
+            第一行第一列 找不到时默认返回 pReturn
+            </summary>
+            <param name="pSQL">sql 语句</param>
+            <param name="pArrParam">IDataParameter 参数数组</param>
+            <param name="pReturn"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.DefaultHelp.First(System.String,System.Data.CommandType,System.Data.IDataParameter[],System.String)">
+            <summary>
+            第一行第一列 找不到时默认返回 pReturn
+            </summary>
+            <param name="pSQL">sql 语句</param>
+            <param name="pCmdType">设置CommandType</param>
+            <param name="pArrParam">IDataParameter 参数数组</param>
+            <param name="pReturn"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.DefaultHelp.First(WZ.Common.IDbHelpParam,System.String)">
+            <summary>
+            第一行第一列 找不到时默认返回 pReturn
+            </summary>
+            <param name="pDbHelpParam">DbHelp 接收参数专用类</param>
+            <param name="pReturn"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.DefaultHelp.ExecuteTrans(WZ.Common.IDbHelpParam,WZ.Common.DbHelp.ExecuteTransHandler,WZ.Common.DbHelp.ITransM)">
+            <summary>
+            事务处理
+            </summary>
+            <param name="pDbHelpParam">DbHelp 接收参数专用类</param>
+            <param name="pTrands">要处理事务的方法</param>
+            <param name="pObj">传参数</param>
+        </member>
+        <member name="M:WZ.Common.DefaultHelp.SetCmd(WZ.Common.IDbHelpParam,System.Data.IDbCommand,System.Data.IDbConnection)">
+            <summary>
+            设置 DbCommand
+            </summary>
+            <param name="pDbHelpParam">DbHelp 接收参数专用类</param>
+            <param name="pCommand">IDbCommand</param>
+            <param name="pConn">IDbConnection</param>
+        </member>
+        <member name="T:WZ.Common.TransHelp">
+            <summary>
+            事务操作基本功能
+            </summary>
+        </member>
+        <member name="M:WZ.Common.TransHelp.Scalar(System.String,System.Data.IDataParameter[])">
+            <summary>
+            第一行第一列 可能为null
+            </summary>
+            <param name="pSQL">sql 语句</param>
+            <param name="pArrParam">IDataParameter 参数数组</param>
+            <returns></returns>
+        </member>
+        <member name="M:WZ.Common.TransHelp.Scalar(System.String,System.Data.CommandType,System.Data.IDataParameter[])">
+            <summary>
+            第一行第一列 可能为null
+            </summary>
+            <param name="pSQL">sql 语句</param>
+            <param name="pCmdType">设置CommandType</param>
+            <param name="pArrParam">IDataParameter 参数数组</param>
+            <returns></returns>
+        </member>
+        <member name="T:WZ.Common.ConnString">
+            <summary>
+            数据库链接字符串
+            </summary>
+        </member>
+        <member name="F:WZ.Common.ConnString.SqlServer">
+            <summary>
+            SqlServer
+            </summary>
+        </member>
+    </members>
+</doc>

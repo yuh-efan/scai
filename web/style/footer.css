@@ -1,0 +1,7 @@
+.footer2 { height:120px; background:#f3f3f3 url(../images/footer_bg.gif) repeat-x;}
+	.footer-main2 { margin:0 auto; width:960px; height:90px; padding:20px 0; padding-left:0px; background:#f3f3f3 url(../images/footer_bg.gif) repeat-x; text-align:center;}
+		.footer-nav2 { padding-top:10px;}
+		.footer-nav2 a { margin-right:15px;}
+		.znav { padding-top:10px;}
+		.znav a { margin:0 5px;}
+			.copyright-txt2 { padding-top:10px;}

@@ -1,0 +1,16 @@
+E:\w网站\scw\WZB.Data\obj\Debug\ResolveAssemblyReference.cache
+E:\w网站\scw\WZB.Data\bin\Debug\WZB.Data.dll
+E:\w网站\scw\WZB.Data\bin\Debug\WZB.Data.pdb
+E:\w网站\scw\WZB.Data\bin\Debug\WZ.Common.dll
+E:\w网站\scw\WZB.Data\bin\Debug\WZ.DAL.dll
+E:\w网站\scw\WZB.Data\bin\Debug\WZ.Data.dll
+E:\w网站\scw\WZB.Data\bin\Debug\WZ.Model.dll
+E:\w网站\scw\WZB.Data\bin\Debug\WZB.Common.dll
+E:\w网站\scw\WZB.Data\bin\Debug\Newtonsoft.Json.dll
+E:\w网站\scw\WZB.Data\bin\Debug\WZ.Data.pdb
+E:\w网站\scw\WZB.Data\bin\Debug\WZ.Model.pdb
+E:\w网站\scw\WZB.Data\bin\Debug\WZB.Common.pdb
+E:\w网站\scw\WZB.Data\bin\Debug\WZ.DAL.pdb
+E:\w网站\scw\WZB.Data\bin\Debug\WZ.Common.pdb
+E:\w网站\scw\WZB.Data\obj\Debug\WZB.Data.dll
+E:\w网站\scw\WZB.Data\obj\Debug\WZB.Data.pdb

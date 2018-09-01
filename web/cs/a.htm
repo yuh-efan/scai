@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<body>
+
+
+
+
+
+<canvas id="myCanvas" width="200" height="100"></canvas>
+
+<script type="text/javascript">
+var c=document.getElementById("myCanvas");
+var cxt=c.getContext("2d");
+cxt.fillStyle="#900000";
+cxt.fillRect(0,0,150,75);
+
+for(var i=10;i<99;i+=10)
+{
+	cxt.fillStyle="#"+i+"0000";
+	cxt.fillRect(i,i,150,75);
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+﻿body,.site-nav{background:url(../images/body-bg.gif) repeat-x}
+.gap{padding:0 10px}
+/*hot-Search*/
+.weblocation{ width:990px; margin:0 auto; line-height:30px; height:30px; padding-left:10px; background:url(../images/main_bg.gif) repeat-x;}
+	.weblocation p { background:url(../images/current_ico.gif) no-repeat 0 7px; padding-left:20px;}
+
+/*site-nav*/
+.site-nav{background-repeat:repeat-x;line-height:28px;width:100%;height:28px;}
+	.login-info{float:left}
+	
+	.quick-menu{float:right; }
+
+	.quick-menu li{float:left; background:url(../images/gap.gif) no-repeat right; padding:0 15px;}
+	.quick-menu li.sel{background:url(../images/myBasket-sel-bg.gif) no-repeat 0 2px;}
+	.quick-menu li.myBasket{ position:relative; z-index:99}
+	.quick-menu li.myBasket .green{padding-right:12px; background:url(../images/point-down.gif) no-repeat right}
+	.quick-menu	li.site-help {padding-right:0; background:none}
+	/*我的菜篮子下拉*/
+	.myBasket-dropDown{ line-height:1.8em;padding-bottom:5px; text-align:center; width:100px; border:solid 1px #ccc;border-top:0; background-color:#fff; position:absolute; top:28px;left:0px; display:none}
+	.myBasket-dropDown a{ display:block}
+/*logo search*/
+
+.search-content{padding-top:28px; width:100%;}
+.search-content:after{clear:both;content:" ";display:block;height:0;}
+
+	.logo{float:left;padding-bottom:2px}
+	.search-wrap{float:left;padding-left:90px; position:relative; z-index:89}
+		.search-category{position:absolute;top:1px; z-index:2; font-size:14px}
+			.search-category a.sel,.search-category a.sel span{background:url(../images/category-bt-bg.gif) no-repeat; color:#666; font-weight:bold; }
+			.search-category a.sel:hover{color:#666; font-weight:bold}
+			.search-category a.sel span{background-position:right;}
+			
+			.search-category a{padding-left:18px; text-decoration:none; float:left;color:#26a61d;}
+			.search-category a:hover{color:#26a61d; text-decoration:underline}
+				.search-category a span{padding-right:18px;display:block; line-height:28px;}
+				
+		.search-text{margin-top:28px}
+		.search-text { height:40px; float:left}
+		.search-text li.search-bg{float:left;background:url(../images/inp-bg.png) no-repeat}
+		.search-text li.search-bg-l{width:11px; height:100%}
+		.search-text li.search-bg-m{ background-repeat:repeat-x; background-position:0 -42px;width:490px;height:100%; position:relative;}
+		.search-text li.search-bg-r{ background-repeat:no-repeat;background-position:0 -84px;width:4px;height:100%}
+				.search-inp{border:0px; width:385px;margin-top:7px; font-size:14px;padding:6px 0px 4px;color:#666;padding-right:1px}
+				.search-bt{background:url(../images/search-bt.gif) no-repeat; border:0px; width:102px; height:32px;position:absolute; right:0px; top:4px}
+		.search-advanced{ float:left; padding:12px 0 0 20px}
+		
+		
+		/*搜索下拉*/	
+		.kwList{width:394px; position:absolute; left:-7px; top:37px;float:left; border:solid 1px #ccc; background-color:#fff;cursor:pointer}
+		.kwList li{ padding:4px 8px; border-bottom:dashed 1px #ccc;color:#029B0F; float:none;}
+			.kwList li.sel{background-color:#029B0F;color:#fff;}
+		.kwList .seaRight{color:#999;  float:right;}
+		.kwList li.sel .seaRight{color:#fff;}
+		
+				
+/*channel*/
+.channel,.channel-l,.channel-r,.channel-cart-l,.channel-cart-r,.channel-cart-m,.goBuy,.cart-pic{background:url(../images/channel.png) no-repeat}
+
+.channel{position:relative;height:47px; background-position:0px -96px; background-repeat:repeat-x;z-index:70}
+	
+	.channel-l{position:absolute;top:0px;left:-26px; width:26px; height:47px;}
+	.channel-r{position:absolute;top:0px;right:-26px; width:26px; height:47px; background-position:0px -48px}
+	.channel-content{padding:5px 0 0 30px; float:left}
+	.channel-content li{float:left; position:relative; }
+	
+	.channel-content a.forum{display:block; padding:8px 20px 10px;color:#FFF; text-decoration:none; position:relative; z-index:2;font-size:14px;font-weight:bold;}
+	.channel-content li.sel a.forum,.channel-content a.forum:hover{ background-color:#FFF;color:#26a61d;text-decoration:none}
+	
+	.channel-content .channel-float{width:155px;position:absolute; left:-2px; top:34px;padding:10px;border:solid 2px #0a7001; background-color:#fff}
+		.channel-float {display:none}
+		.channel-float ul li{float:none; position:static;/*清除继承*/}
+		.channel-float ul{width:100%; overflow:hidden}
+		.channel-float ul li.channel-float-pro{float:left;padding-left:10px; width:67px; background:url(../images/channel-float-pro.png) no-repeat 0 -28px; line-height:2em;}
+		.channel-float ul li.channel-float-pro-class{ background-position:0 7px; float:none;}
+		.channel-float ul li.channel-float-pro-class a:hover{ text-decoration:none}
+		.channel-float ul li.channel-float-pro-activity{ background-image:none;}
+		
+		
+		
+	.channel-cart{float:right; padding-top:9px;}
+	.channel-cart li{float:left}
+		.channel-cart-l{ background-position:left -144px; width:4px; height:23px}
+		.channel-cart-r{ background-position:right -144px; width:4px; height:23px}
+		.channel-cart-m{ background-position:left -171px; background-repeat:repeat-x; height:23px;}
+			.channel-cart-m ul{padding-top:3px}
+				.goBuy{ background-position:40px -216px; padding-right:20px}
+				.shop-N{font-weight:bold; display:inline-block; width:25px; text-align:center}
+				.cart-pic{background-position:left -194px; width:18px; height:15px; padding-right:15px}
+				.cart-txt{position:relative}
+					.cart-link{padding-right:12px;background:url(/images/point-down.gif) no-repeat right center}
+				
+	
+	/*   购物车弹出部分css  */
+	.shop-main { width:244px; border:solid 3px #0b7102;border-top:0; background-color:#eaeaea;padding-top:5px; position:absolute;  top:19px; left:-40px; display:none}
+		.shop-main dl { padding:10px; border-bottom:#ccc dashed 1px;}
+		.shop-main dt { float:left; width:52px;}
+		.shop-main .Price { float:right; color:#f00; font-weight:bold;}
+		.shop-main .Quantity { color:#999;}
+		.shop-main .Del { float:right; color:#999;}
+		.shop-main dd em { margin-left:5px;}
+		.products-name{display:inline-block; width:96px; overflow:hidden;height:1.5em;}
+		
+		.Total { height:40px; line-height:40px; text-align:right; padding-right:10px}
+		.Total strong { color:#f00;}
+		.Exashop { float:right; margin-bottom:10px; display:block; width:105px; height:21px; line-height:21px; text-align:center; background:url(../images/shop.gif) no-repeat; color:#fff;padding-right:10px;}
+		.Exashop:hover { color:#fff; text-decoration:underline;}
+

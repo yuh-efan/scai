@@ -1,0 +1,92 @@
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td{margin:0px;padding:0px}
+
+body{font:12px/1.5em 宋体; color:#666}
+body,.site-nav{background:url(../images/body-bg.gif) repeat-x}
+
+ul{list-style-type:none}
+img{border:0;}
+
+.left{float:left}
+.right{float:right}
+.clear{clear:both}
+.hidden{display:none}
+
+.header, .content, .footer{width:980px;margin:0 auto}
+
+
+a{ text-decoration:none}
+a:hover{ text-decoration:underline}
+
+a,.black a,a.black,.black{color:#666;}
+a:hover,.black a:hover,a.black:hover{color:#26a61d;}
+
+.red a,a.red,.red{color:#cc0000;}
+.red a:hover,a.red:hover{color:#26a61d;}
+
+.green a,a.green,.green{color:#26a61d;}
+.green a:hover,a.green:hover{color:#26a61d;}
+
+.brown a,a.brown,.brown{color:#333;}
+.brown a:hover,a.brown:hover{color:#26a61d;}
+
+.white a,a.white,.white{color:#fff;}
+.white a:hover,a.white:hover,.white:hover{color:#fff;}
+
+
+
+/*a,a.black{ color:#666;text-decoration:none;}
+a:hover,a.black:hover{color:#26a61d;text-decoration:underline}*/
+
+
+
+
+/*一下是旧版本的*/
+.main { margin:0 auto; width:980px; padding-top:3px; padding-bottom:20px; overflow:hidden;}
+h1, h2, h3, h4, h5, h6, th {
+     font-weight: normal;
+     font-style: normal;
+	 font-size:12px;
+}
+
+.def{line-height:1.5em; font-family:Arial, 宋体; }
+.def li{float:left; text-align:center;}
+.def .d-left-img{float:left;}
+.def .d-left-content{float:left; padding-left:5px; text-align:left}
+/*新加*/
+.def .d-left-content .d-name{padding-top:0px;}
+/*=end==*/
+.def .d-pic{padding:1px;border:solid 1px #ccc;display:block;}
+.def .d-pic:hover{border-color:#cd2a23;}
+.def .d-name{width:100%;height:1.5em; overflow:hidden;/*新加*/padding-top:5px;}
+.def .d-name a{color:#315f80;text-decoration:none; }
+.def .d-name a:hover{color:#cd2a23;text-decoration:underline;}
+.def .d-price,.def .d-price2 span{color:#cd2a23; font-size:18px; font-weight:bold;}/*以后用d-price2*/
+
+
+.def .d-des{ text-align:left; }
+
+
+.def1{line-height:2em; font-family:Arial, 宋体;}
+.def1 li{overflow:hidden; border-bottom:solid 1px #ccc; padding:10px;}
+.def1 .d-left{float:left}
+.def1 .d-name a{color:#315f80; font-size:14px; font-weight:bold; text-decoration:none}
+.def1 .d-name a:hover{text-decoration:underline; color:#cc0000;}
+.def1 .d-pic{float:left}
+.def1 .d-pic a{border:1px #ccc solid;padding:1px; display:block;}
+.def1 .d-pic a:hover{border-color:#f00}
+.def1 .d-des{ float:left;padding-left:15px}
+.def1 .d-des dl dd div.d-number{float:left;width:220px;}
+.def1 .d-des dl dd div.d-format{float:left; }
+.def1 .d-des dl dd div.d-stock{ clear:both}
+.def1 .d-right{float:right;padding-top:10px}
+.def1 .d-price{text-align:center}
+.def1 .d-price span{color:#cc0000; font-size:14px; font-weight:bold}
+.def1 .d-buttom{padding:10px 25px 0px}
+.def1 .d-buy{padding-right:20px; float:left}
+.def1 .d-favorites{float:left}
+
+
+/*   翻页   */
+.paging{ text-align:right; height:30px;  padding-top:10px;}
+.paging a{ display:inline-block; padding:0 6px; height:18px; line-height:18px; margin-left:2px; border:1px solid #ccc; text-align:center;}
+.paging .cp{ background:#ebfdee; color:#02a318; font-weight:bold; border:#02a318 solid 1px;}

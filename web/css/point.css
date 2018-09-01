@@ -1,0 +1,55 @@
+
+/*   通用css   */
+.Category h1,.Category-bottom,.Category-main dt,.Category-main dl,.Seckill h1,.Seckill-bottom,.Notice h1 { background:url(../images/index/bg.gif) no-repeat;}
+.products-box h1,.products-box h2,.products-box h3 { background:url(../images/index/bg2.gif) no-repeat;}
+.Ranking h1,.Ranking-bottom { background:url(../images/index/Ranking.gif) no-repeat;}
+.box-content h1,.box-content h2,.Investigation h1,.suntj,.consignment h1 { background:url(../images/index/box3.gif) no-repeat;}
+
+
+
+.Ranking h1,.box-content h1 { background:url(../images/point.gif) no-repeat;}
+
+
+
+
+.left { float:left; width:205px;}
+/*   销售排行css   */
+	.Ranking { padding-top:0;}
+	.Ranking h1 { height:38px;}
+	.Ranking-main { padding:0 15px; background:url(../images/index/Ranking_bg.gif) repeat-y;}
+		.Ranking-main dl { overflow:auto; _height:1%; padding:5px 0; border-bottom:#e1e1e1 solid 1px;}
+		.Ranking-main dt span { background:#02a318; color:#fff; font-weight:bold; padding:2px 5px;}
+		.Ranking-main dd { padding-left:23px;}
+	.Ranking-bottom { height:12px; background-position:0 -40px;}
+
+.right { float:right; width:745px;}
+	/*   模块1 css   */
+	.box1 { height:220px;}
+		/*   焦点图 css   */
+		.banner { float:left; width:518px; height:220px;}
+			.promo { width:518px; height:220px; position:relative;}
+				.container{width:518px; height:220px; overflow:hidden; position:absolute;}
+				.ppt1_img{ overflow:hidden;width:518px; height:220px;}
+				.ppt1_img li{ list-style:none; font-size:0px; float:left}
+				.ppt1_img img{ width:518px; height:220px; display:block;}
+				.ppt1_num{ position:absolute; right:5px; bottom:5px;}
+				.ppt1_num li{float: left;color: #FF7300;text-align: center;line-height: 16px;
+width: 16px;height: 16px;font-family: Arial;font-size: 12px;cursor: pointer;overflow: hidden;margin: 3px 1px;border: 1px solid #FF7300;background-color: #fff;}
+				.ppt1_num .over{ color: #fff;line-height: 21px;width: 21px;height: 21px;font-size: 16px;margin: 0 1px;border: 0;background-color: #FF7300;font-weight: bold;}
+		/*   积分动态 css   */
+		.box-content { float:right; width:220px;}
+		.box-content h1 { height:31px; border-bottom:#e2e2e2 solid 1px; border-top:#e2e2e2 solid 1px; background-position:0 -39px;}
+			.news-bottom { padding:5px 10px 10px 10px;}
+			.news-bottom li { height:25px; line-height:25px; overflow:hidden; padding:0 10px; background:url(../images/index/liico.gif) no-repeat 0 11px;}
+			
+	/*  推荐、兑换专区 */
+	.Hot-main { height:220px; margin-top:10px; overflow:hidden;}
+	.Hot-main2 { margin-top:10px; overflow:hidden;}
+		.Hot-main h1 { height:28px; background:#eaeaea url(../images/point.gif) no-repeat 0 -71px; margin-bottom:10px;}
+		.Hot-main2 h2 { height:28px; background:#eaeaea url(../images/point.gif) no-repeat 0 -100px; margin-bottom:10px; line-height:28px; text-align:right; padding-right:15px;}
+			.Hot-main2 h2 a { margin:0 10px;}
+			.Hot-main2 h2 span { margin:0 10px; font-weight:bold; color:#f00;}
+			.Hot-products li { float:left; width:134px; height:200px; padding:0 6px;}
+				.Hot-products li p,.Hot-products2 li p { padding-top:5px; height:40px;}
+			.Hot-products2 li { float:left; width:144px; height:200px; padding:0 7px;}
+	

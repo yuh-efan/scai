@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="proMsg.aspx.cs" Inherits="WZ.Web.ajax.proMsg" %>

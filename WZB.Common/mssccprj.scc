@@ -1,0 +1,9 @@
+SCC = This is a Source Code Control file
+
+[WZB.Common.csproj]
+SCC_Aux_Path = "G:\vss_web_new"
+SCC_Project_Name = "$/scw.root/scw/WZB.Common", XABAAAAA
+
+[WZ.Client.Common.csproj]
+SCC_Aux_Path = "G:\vss_web_new"
+SCC_Project_Name = "$/scw.root/scw/WZB.Common", XABAAAAA

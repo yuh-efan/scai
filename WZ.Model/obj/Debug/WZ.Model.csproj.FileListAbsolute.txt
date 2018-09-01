@@ -1,0 +1,10 @@
+E:\w网站\scw\WZ.Model\bin\Debug\WZ.Model.dll
+E:\w网站\scw\WZ.Model\bin\Debug\WZ.Model.pdb
+E:\w网站\scw\WZ.Model\obj\Debug\ResolveAssemblyReference.cache
+E:\w网站\scw\WZ.Model\obj\Debug\WZ.Model.dll
+E:\w网站\scw\WZ.Model\obj\Debug\WZ.Model.pdb
+E:\w网站\scw\scw\WZ.Model\bin\Debug\WZ.Model.dll
+E:\w网站\scw\scw\WZ.Model\bin\Debug\WZ.Model.pdb
+E:\w网站\scw\scw\WZ.Model\obj\Debug\ResolveAssemblyReference.cache
+E:\w网站\scw\scw\WZ.Model\obj\Debug\WZ.Model.dll
+E:\w网站\scw\scw\WZ.Model\obj\Debug\WZ.Model.pdb

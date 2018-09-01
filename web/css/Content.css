@@ -1,0 +1,165 @@
+﻿
+/*   通用css   */
+
+.content-box h1,.Grading,.Bookmark,.Share,.Appraisal,.Consultation,.Reply,.Grading2,.Subinput,.twLeft h4,.Including-text,.sun, { background:url(../images/products_bg.gif) no-repeat;}
+
+
+.left { float:left; width:755px;}
+	/* 商品基本信息 */
+	.red2{ color:#cc0000; font-weight:bold}
+	.red3{ color:#cc0000; font-weight:bold; font-size:14px;}
+	
+	.property { width:755px;}
+		.gallery { float:left; width:379px;}
+			.pic { width:379px; height:284px;}
+			.thumb li { float:left; border:#ddd solid 1px; padding:1px; width:46px; height:46px; margin-right:10px; margin-top:10px; display:inline; font-size:0; overflow:hidden;}
+		.wrap { float:right; width:360px;}
+		.wrap h3 { min-height:30px; height:auto !important; height:30px; line-height:30px; font-size:14px; font-weight:bold; color:#000;}
+			.goods_number { color:#999;}
+			.Att-box1 { border-bottom:#ddd solid 1px; padding-bottom:5px; overflow:hidden; _overflow:auto; _height:1%;}
+				.Att-box1 li { float:left; width:175px; height:25px; line-height:25px;}
+				.Att-box1 li del { color:#999;}
+				.Att-box1 li em  { padding:0 8px; color:#999;}
+				.Att-box1 .SecKill { width:350px;}
+			.Att-box2 { padding:10px 0; min-height:20px; height:auto !important; height:20px;}
+					.Specially { float:left; display:block;}
+					.Att-box2 ul { float:left; width:360px;}
+						.Att-box2 ul li { float:left; padding-right:5px;}
+			.Purchase li {  height:25px; width:350px;}
+				.Purchase strong { float:left; display:block;}
+				.Grading { float:left; display:block; width:77px; height:20px; padding-right:5px;}
+				#no-1,#no-01 { background-position:0 -55px;}
+				#no-2,#no-02 { background-position:0 -90px;}
+				#no-3,#no-03 { background-position:0 -125px;}	
+				#no-4,#no-04 { background-position:0 -163px;}
+				#no-5,#no-05 { background-position:0 -198px;}
+			.action { width:338px; height:75px; padding:10px; background:#fdfef3; border:#d6e86b solid 1px;}
+			.action li { padding:5px;}
+				.action li .Qinput { width:30px; height:14px; text-align:center;}
+				.Joined { float:left; padding-right:10px; width:92px; }
+					.Joined a { padding-left:20px;  height:28px; line-height:28px; display:inline-block;}
+					.Bookmark { background-position:-218px -58px;}
+					.Share { background-position:-218px -84px;}
+				.Joined2 { float:left; padding-right:10px; width:124px;}
+				.Joinedshop { width:108px; height:28px; border:0; background:url(../images/products_bg.gif) no-repeat -110px -56px;}
+				.Joined div {position:absolute;left:-107px;top:32px;float:left;width:165px; display:none; height:18px; overflow:hidden;}
+					.Joined div a{padding:0px 2px}
+			.Recipes { width:350px; height:25px; line-height:25px; padding-top:10px;}
+	/* 商品描述 */
+	.description { padding-top:3px;}
+	.description h1 { height:28px; background:#eaeaea url(../images/products_bg.gif) no-repeat -477px -152px;}
+	.description h2 { height:28px; background:#eaeaea url(../images/products_bg.gif) no-repeat -464px -180px;}
+	.description h3 { height:28px; background:#eaeaea url(../images/ship_01.gif) no-repeat;}
+	.description h4 { height:28px; background:#eaeaea url(../images/ship_02.gif) no-repeat;}
+		.Hot-main { padding:15px 10px 0 10px; font-size:14px; line-height:24px; min-height:120px; height:auto !important; height:120px; }
+	/* 评价与咨询 - 商品内容页 */
+	.reviews { width:735px; border:#eaeaea solid 10px; margin-top:3px}
+		.reviews-title { height:26px; line-height:26px; background:#eaeaea;}
+			.reviews-title span { float:right; color:#999; padding-right:10px;}
+			.Appraisal { width:130px; background-position:-311px -56px;}
+			.reviews-title ul { height:26px;}
+				.reviews-title li { float:left;}
+				.reviews-title li a { display:block; width:133px; height:26px; line-height:26px; text-align:center; color:#333; font-weight:bold; text-indent:-9999px; outline:none; cursor:pointer;}
+			.Consultation { width:267px; background-position:-311px -82px;}
+		.reviews h3 { margin:10px 10px 0 10px; height:32px; line-height:32px; background:#f2fcf3 url(../images/products_bg.gif) no-repeat -572px -208px; padding-left:38px; border:#a2d0a8 solid 1px; color:#328001;}
+		.comment { padding:10px; border-bottom:#ddd dashed 1px; color:#999;}
+			.com-left { float:left; width:560px; padding:0 10px;}
+				.com-right .star { margin-bottom:5px}
+				.com-txt { padding:5px 0 0 20px; color:#666;}
+				.Reply { float:left; display:block; width:40px; height:20px; background-position:-110px -102px;}
+				.com-Reply { padding:0 0 10px 20px; color:#d04102;}
+			.com-right { float:right; width:129px; padding-top:10px;}
+				.Grading2 { height:20px; margin-left:25px;}
+	.twLeft { padding-top:10px; }
+	.twLeft h4 { height:25px; background-position:-532px -241px;}
+		.txaAddText { height:92px;}
+		.txaAddText textarea { height:70px; width:729px; padding:10px; font-size:12px; color:#666;}
+		.Sub-box { height:32px;}
+		.Code { float:left; width:500px; height:32px;}
+			.Code li { float:left; padding-top:10px; padding-right:5px;}
+		.Sub { float:right; text-align:right; padding-top:10px;}
+			.Subinput { width:57px; height:22px; border:0; background-position:-158px -105px;}
+
+
+.right { float:right; width:215px;}
+    /*   同类商品css   */
+	.content-box { padding:5px; background:#eaeaea;}
+	.content-box h1 { height:28px; background-position:-160px -28px;}
+	.content { background:#fff; padding:5px 10px 10px 10px;}
+		.content li { padding:5px 16px 0 16px;}
+		.content li .cssName {  height:20px; line-height:20px; text-align:center; overflow:hidden;}
+		.content li .cssName a { color:#315f80; text-decoration:none;}
+		
+		
+		
+	/*   您最近浏览过的商品css   */
+	.Recently-box { padding:5px; background:#eaeaea; margin-top:10px;}
+	.Recently-box h1 { height:28px; background:url(../images/Specially.gif) no-repeat 0 -29px;}
+		.Attention { background:#fff; padding:15px 10px; overflow:hidden;}
+			.Attention li { float:left; width:64px; text-align:center; padding:0 8px;}
+			.Attention li p { height:25px; line-height:25px;}
+		
+	/*   包含菜品css   */
+	.Att-box1-2 { border-bottom:#ddd solid 1px; height:25px; padding-bottom:5px;}
+		.Att-box1-2 li { float:left; width:175px; height:25px; line-height:25px;}
+		.Att-box1-2 li del { color:#999;}
+	.Including { margin-top:3px; padding:5px; background:#eaeaea;}
+	.Including-text { height:28px; background-position:-609px -463px; text-align:right; padding-right:5px;}
+	.Including-text1 { height:28px; background:url(../images/products_bg2.gif) no-repeat; text-align:right; padding-right:5px;}
+		.Including-main { background:#fff; height:150px;}
+		.Including-left { float:left; width:600px;}
+			/*   更改css   */
+			.Including-Button { float:left; width:30px; text-align:center; padding:50px 0; }
+			.Including-Button span{cursor:pointer;display:inline-block; width:10px;height:47px; background-repeat:no-repeat;}
+			.Including-Button span.yes1{background-image:url(/images/content_left.gif);}
+			.Including-Button span.no1{ background-image:url(/images/content_left2.gif); cursor:auto;}
+			.Including-Button span.yes2{background-image:url(/images/content_right.gif)}
+			.Including-Button span.no2{ background-image:url(/images/content_right2.gif);cursor:auto;}
+			
+			.Including-left ul { float:left; width:540px;}
+			.Including-left li { float:left; text-align:center; width:78px; padding:0 15px;}
+			.Including-left li span { display:block; padding-top:10px; height:20px; text-align:center; overflow:hidden;}
+		.Including-right { float:left; width:139px; text-align:center; padding-top:15px;}
+			.Including-right h2 { height:30px; line-height:30px; font-weight:bold;}
+			.Including-right span { color:#cd2a23;}
+			.Including-right p { padding-top:15px;}
+			.sun { width:87px; height:26px; border:0; background-position:-390px -272px;}
+			
+	/* 评价与咨询 - 食谱内容页 */
+		.ship-Appraisal { width:133px; background:url(../images/yhpl.gif) no-repeat 0 1px}
+			.ship-Appraisal ul { height:26px;}
+				.ship-Appraisal li { float:left;}
+				.ship-Appraisal li a { display:block; width:133px; height:26px; line-height:26px; text-align:center; color:#333; font-weight:bold; text-indent:-9999px; outline:none; cursor:pointer;}
+		.ship-twLeft .h4 { height:20px; background:url(../images/fbpj.gif) no-repeat; margin-top:10px; padding-top:5px; padding-left:80px}
+
+	/* 相关食谱、相关套餐 */
+	.ch-main { padding-top:3px;}
+	.ch-main ul { width:100%; overflow:hidden}
+	.ch-main h1,.ch-main h2 { height:28px; background:#eaeaea url(../images/search_02.gif) no-repeat;line-height:28px; text-align:right; padding-right:15px;}
+	.ch-main h2 { background-position:0 -28px;}
+	.Hot-products li { float:left; width:129px; text-align:center; padding:0 10px;}
+	.Hot-products li .cssName { height:26px; line-height:26px;}
+	
+	
+.note { float:left; width:359px; padding-top:2px; color:#666;}
+
+.dimPic{padding:10px 0px 5px 0px}
+.border{border:solid 1px #ddd}
+.list{padding:12px 0;}
+
+/*同类*/
+.d_list1{background:#fff;padding:5px 10px 10px 10px;}
+.d_list1 li{float:none; width:151px;padding:5px 16px 0 16px;}
+.d_list1 .d_price{ font-weight:normal; font-size:12px;}
+
+/*关注*/
+.d_list2{background:#fff; padding:15px 10px;overflow:hidden; height:340px;}
+.d_list2 li{width:76px; padding:0 8px;}
+.d_list2 .d_name{overflow:hidden; line-height:22px; height:22px;}
+
+/*相关*/
+.d_list3 li{width:127px; padding:0 10px; }
+/*包含商品*/
+.d_list4 ul {width:520px;float:left;}
+.d_list4 li{width:78px; padding:0 13px;}
+.d_list4 .d_price{font-size:12px; font-weight:normal;}

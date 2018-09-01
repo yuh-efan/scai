@@ -1,0 +1,56 @@
+
+.Login { padding:15px 0; color:#666;}
+.Login h1 { height:41px; border-bottom:#ccc solid 1px;}
+.Logintable { padding:40px 0px 40px 100px;}
+
+.Logintable td { padding:0px 1px; line-height:16px; height:40px;}
+.Logintable input,.logintable2 input,.logintable3 input  { border:#cccccc solid 1px; height:20px; color:#666; padding-left:5px;}
+.txt-left { width:140px; text-align:right;}
+.center { width:250px;}
+.center img,.logincenter img { margin:0 5px;}
+.center input,.logincenter input { vertical-align:top; width:199px}
+ 
+.sun { padding:20px 0; text-align:center;}
+.Agreement { padding-top:10px; height:115px; padding:10px; color:#818695; border:#cccccc solid 1px; overflow-y:scroll;}
+
+.box { width:908px; height:311px; border:#ddd solid 1px; margin-bottom:30px; padding:20px;}
+.login { float:left; width:418px; padding-right:50px; border-right:#ddd solid 1px;}
+.Reg { float:right;}
+.login p { padding:15px; color:#999;}
+.box h2 { height:28px; border-bottom:#ccc solid 1px;}
+.logintable2 td { padding:8px 1px; line-height:16px;}
+.loginleft { width:80px; text-align:right;}
+.loginleft2 { width:130px; text-align:right;}
+.logincenter { width:200px;}
+.sun2 { padding:20px 0; padding-left:83px;}
+.login-note { padding-top:30px; text-align:right;}
+.Regtable { float:right; width:400px; padding-left:39px; padding-top:10px;}
+.Regtable h3 { height:28px; background:url(../images/login/login_04.gif) no-repeat;}
+.Regtable ul { padding-top:10px; padding-left:20px;}
+.Regtable li { line-height:30px; line-height:30px; background:url(../images/login/login_05.gif) no-repeat 0 11px; padding-left:15px;}
+.Regtable li span { color:#38922c; font-weight:bold;}
+.Regtable li a { color:#f36200;}
+.reg { padding-top:20px; text-align:center;}
+
+.sun03 { width:62px; height:21px; border:0!important; background:url(../images/login/sun_01.gif) no-repeat;}
+.sun2 span{ color:#F00}
+
+/*   成功   */
+.Success { padding:80px 0; background:url(../images/login/Success_01.gif) no-repeat 185px 105px; padding-left:330px;}
+.Success2 { padding:80px 0; background:url(../images/login/Password.gif) no-repeat 185px 105px; padding-left:330px;}
+.Success3 { padding:80px 0; background:url(../images/login/Password.gif) no-repeat 185px 80px; padding-left:330px;}
+.Success h1 { height:28px; background:url(../images/login/Password.gif) no-repeat;}
+.Success2 .Password { height:28px; background:url(../images/login/Success_03.gif) no-repeat;}
+.Success3 .Mail { height:28px; background:url(../images/login/Success_04.gif) no-repeat;}
+.txt { padding-left:10px; padding-top:15px; line-height:180%;}
+.Success ul,.Success2 ul,.Success3 ul { padding-top:30px; padding-left:10px;}
+.Success ul li,.Success2 ul li,.Success3 ul li { padding-bottom:5px;}
+
+.sun4 { padding-top:20px; padding-left:142px;}
+.sun04 { border:0!important; color:#fff!important; width:100px; height:21px; line-height:21px; font-size:12px; background:url(../images/sun2.gif) no-repeat; text-align:center;}
+
+/*  用户提示下拉  
+.full{ position:relative}
+.full .cNameList{position:absolute; left:0px;top:24px; float:left; border:solid 1px #ccc; background-color:#fff;color:#029B0F; display:none; min-width:204px;width:auto !important; width:204px;}
+.full .cNameList span{ display:block; padding:4px; border-bottom:dashed 1px #ccc; cursor:pointer;height:auto !important;height:1px;color:#029B0F}
+.full .cNameList span.select{background-color:#029B0F;color:#fff;} */

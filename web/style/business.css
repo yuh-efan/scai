@@ -1,0 +1,23 @@
+.plate{border:solid 1px #ccc}
+.plate-head{border-bottom:solid 1px #ccc}
+
+.content-main{width:730px}
+.sidebar{width:240px}
+.introduction{ background-color:#f7f7f7;padding:24px 15px; margin-bottom:10px}
+.introduction .txt{ line-height:1.8em;}
+	.businessPro-Search{ margin-top:20px; width:296px; height:21px; overflow:hidden}
+	.businessPro-Search .left{width:232px; height:21px; background:url(../images/business/businessPro-search.gif) no-repeat}
+	.businessPro-Search .txt{ float:right;width:200px; line-height:14px; border:0px; padding:2px 1px 0 0; margin:2px 1px 0 0;}
+	.businessPro-search-bt{background:url(../images/business/businessPro-search-bt.gif); border:0px;width:54px;height:21px}
+	.businessPro-head{ background-color:#eeecee;height:30px; line-height:30px; text-indent:1em; font-size:12px; font-weight:bold}
+	
+	.businessPro-list{padding-bottom:20px;}
+	.businessPro-list li{width:161px;padding:20px 0 0 16px}
+	
+	.business-plate{padding:4px 4px 0px 4px; margin-bottom:10px}
+	.business-plate-head{background-color:#929292;}
+	.business-plate-main{padding:10px; line-height:2em;}
+	.business-categories{padding-left:6px}
+	.business-categories a{display:inline-block;padding-left:5px}
+	
+	.adv{width:100%; height:90px; overflow:hidden}

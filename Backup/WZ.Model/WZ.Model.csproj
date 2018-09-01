@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{41046F50-11B4-486F-9844-20B8142588F0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WZ.Model</RootNamespace>
+    <AssemblyName>WZ.Model</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Activity_InfoM.cs" />
+    <Compile Include="A_Admin_UserM.cs" />
+    <Compile Include="A_Admin_User__GroupM.cs" />
+    <Compile Include="A_Admin_User__Pro_ClassM.cs" />
+    <Compile Include="A_Admin_User__Pub_AreaM.cs" />
+    <Compile Include="A_DepartmentM.cs" />
+    <Compile Include="A_FunM.cs" />
+    <Compile Include="A_GroupM.cs" />
+    <Compile Include="A_Group__FunM.cs" />
+    <Compile Include="CaiPu_ClassAttrInfoM.cs" />
+    <Compile Include="CaiPu_ClassAttrM.cs" />
+    <Compile Include="CaiPu_ClassM.cs" />
+    <Compile Include="CaiPu_EvaluateM.cs" />
+    <Compile Include="CaiPu_InfoM.cs" />
+    <Compile Include="CaiPu_MsgM.cs" />
+    <Compile Include="CaiPu_ProM.cs" />
+    <Compile Include="Complaint_InfoM.cs" />
+    <Compile Include="Deliver_InfoM.cs" />
+    <Compile Include="E_BookProM.cs" />
+    <Compile Include="E_InStockM.cs" />
+    <Compile Include="E_NeedPurchaseM.cs" />
+    <Compile Include="E_OutStockM.cs" />
+    <Compile Include="Gift_ClassM.cs" />
+    <Compile Include="Gift_ExchangeLogM.cs" />
+    <Compile Include="Gift_InfoM.cs" />
+    <Compile Include="Help_ClassM.cs" />
+    <Compile Include="Help_InfoM.cs" />
+    <Compile Include="Join_InfoM.cs" />
+    <Compile Include="KeyWordM.cs" />
+    <Compile Include="LinksM.cs" />
+    <Compile Include="Log_OrdM.cs" />
+    <Compile Include="Log_SetUserExpM.cs" />
+    <Compile Include="Log_SetUserIntegralM.cs" />
+    <Compile Include="Log_SetUserLevelM.cs" />
+    <Compile Include="Log_SetUserMoneyM.cs" />
+    <Compile Include="MsgM.cs" />
+    <Compile Include="News_InfoM.cs" />
+    <Compile Include="News_MsgM.cs" />
+    <Compile Include="News_VoteM.cs" />
+    <Compile Include="Ord_InfoM.cs" />
+    <Compile Include="Ord_ProM.cs" />
+    <Compile Include="Ord_StatusM.cs" />
+    <Compile Include="Pay_AttrM.cs" />
+    <Compile Include="Pay_InfoM.cs" />
+    <Compile Include="PPTM.cs" />
+    <Compile Include="Pro_ClassM.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Pro_EvaluateM.cs" />
+    <Compile Include="Pro_LevelPriceM.cs" />
+    <Compile Include="Pro_MsgM.cs" />
+    <Compile Include="Pro_PicTempM.cs" />
+    <Compile Include="Pro_UnitM.cs" />
+    <Compile Include="QuestionnaireM.cs" />
+    <Compile Include="Questionnaire_MsgM.cs" />
+    <Compile Include="Questionnaire_VoteM.cs" />
+    <Compile Include="SurveyM.cs" />
+    <Compile Include="User_ApplyFor_1M.cs" />
+    <Compile Include="User_ContactM.cs" />
+    <Compile Include="Pro_InfoM.cs" />
+    <Compile Include="Pro_PicM.cs" />
+    <Compile Include="Pub_AreaM.cs" />
+    <Compile Include="Pub_SendThingM.cs" />
+    <Compile Include="ReportM.cs" />
+    <Compile Include="User_CartM.cs" />
+    <Compile Include="User_FavM.cs" />
+    <Compile Include="User_InfoM.cs" />
+    <Compile Include="News_ClassM.cs" />
+    <Compile Include="User_LetterM.cs" />
+    <Compile Include="User_LevelM.cs" />
+    <Compile Include="Log_SetUserFreezeMoneyM.cs" />
+    <Compile Include="User_PersonalM.cs" />
+    <Compile Include="User_TeamM.cs" />
+    <Compile Include="Vote_ClassM.cs" />
+    <Compile Include="WebConfigM.cs" />
+    <Compile Include="WebInfoM.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

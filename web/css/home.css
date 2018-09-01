@@ -1,0 +1,145 @@
+﻿/*   通用css   */
+.Category h1,.Category-bottom,.Category-main dt,.Category-main dl,.Seckill h1,.Seckill-bottom,.Notice h1 { background:url(../images/index/bg.gif) no-repeat;}
+.products-box h1,.products-box h2,.products-box h3 { background:url(../images/index/bg2.gif) no-repeat;}
+.Ranking h1,.Ranking-bottom { background:url(../images/index/Ranking.gif) no-repeat;}
+.box-content h1,.box-content h2,.Investigation h1,.suntj,.consignment h1 { background:url(../images/index/box3.gif) no-repeat;}
+
+.left { float:left; width:205px;}
+	/*   商品分类css   */
+	.Category h1 { height:39px;}
+	.Category-main { background:url(../images/index/Category_bg.gif) repeat-y; padding:0 10px;}
+		.Category-main dl { border-bottom:#cce5bf solid 1px; padding-top:5px; background-position:173px -56px; position:relative; }
+		.Category-main dt { font-size:14px; font-weight:bold; background-position:-190px -58px; padding-left:22px;}
+			.Category-main dt a { color:#cd2a23;display:block;width:100%}
+			.Category-main dt a:hover { text-decoration:underline;}
+		.Category-main dd { padding-left:22px; padding-right:10px; height:20px; line-height:20px; padding-bottom:3px; overflow:hidden;}
+		.Category-main dd span {  padding-right:10px; display:inline-block;}
+			.float-box { border:#02a318 solid 5px; padding:10px; background:#fff; position:absolute; top:5px; left:150px; width:300px; display:none; z-index:999;}
+			.Category-main .loc { background:#02a318; color:#fff;}
+			.Category-main .loc a { color:#fff;}
+				.float-box { font-size:12px;}
+				.float-box .text1 { font-weight:bold; color:#02a318;}
+				.float-box .class { height:1%; overflow:auto; padding-top:10px; padding-bottom:15px; border-bottom:#ddd solid 1px; font-weight:normal;}
+				.float-box .class  li { float:left; width:100px; height:25px; line-height:25px;}
+					.float-box .class li a { color:#666; text-decoration:underline;}
+					.float-box .class li a:hover { color:#f00;}
+					.float-box .Attention a { color:#315f80;}
+					.float-box .Attention div { padding-top:5px;}
+
+					.Attention { padding-top:15px;  border-top:#f8f8f8 solid 1px;}
+					.Attention li { float:left; width:64px; text-align:center; padding:0 15px;}
+					.Attention li a { color:#315f80}
+					.Attention li a:hover { color:#cd2a23; text-decoration:underline;}
+					.Attention li div a:hover { color:#cd2a23; text-decoration:underline;}
+
+	.Category-bottom { height:11px; background-position:0 -40px; overflow:hidden;}
+	/*   销售排行css   */
+	.Ranking { padding-top:10px;}
+	.Ranking h1 { height:38px;}
+	.Ranking-main { padding:0 15px; background:url(../images/index/Ranking_bg.gif) repeat-y;}
+		.Ranking-main dl { overflow:auto; _height:1%; padding:5px 0; border-bottom:#e1e1e1 solid 1px;}
+		.Ranking-main dt{line-height:1.5em}
+		.Ranking-main dt span { background:#aaa; color:#fff; font-weight:bold; padding:2px 5px;}
+		.Ranking-main dt.sel span {background:#02a318; color:#fff;}
+		.Ranking-main dt em { float:right; color:#cd2a23}
+	.Ranking-bottom { height:12px; background-position:0 -40px;}
+	/*   广告css   */
+	.banner-2 { padding-top:15px; overflow:hidden; width:205px;}
+	/*   发货通知css   */
+	.consignment { padding-top:10px;}
+	.consignment h1 { height:30px; background-position:0 -120px;}
+	.consignment ul {overflow:hidden;height:150px}
+		.consignment li { padding-top:15px;}
+		.consignment li span { display:block;}
+		.consignment li b { margin-left:10px; color:#f00;}
+
+.right { float:right; width:745px;}
+	/*   模块1 css   */
+	.box1 { height:274px;}
+		/*   焦点图 css   */
+		.banner { float:left; width:546px; height:274px; z-index:1;}
+			.promo { width:546px; height:274px; position:relative;}
+				.container{width:546px; height:274px; overflow:hidden; position:absolute;}
+				.ppt1_img{ overflow:hidden;width:546px; height:274px;}
+				.ppt1_img li{ list-style:none; font-size:0px; float:left}
+				.ppt1_img img{ width:546px; height:274px; display:block;}
+				.ppt1_num{ position:absolute; right:5px; bottom:5px;}
+				.ppt1_num li{float: left;color: #FF7300;text-align: center;line-height: 16px;
+width: 16px;height: 16px;font-family: Arial;font-size: 12px;cursor: pointer;overflow: hidden;margin: 3px 1px;border: 1px solid #FF7300;background-color: #fff;}
+				.ppt1_num .over{ color: #fff;line-height: 21px;width: 21px;height: 21px;font-size: 16px;margin: 0 1px;border: 0;background-color: #FF7300;font-weight: bold;}
+				
+		.box1-right { float:right; width:189px;}
+			/*   今日秒杀 css   */
+			
+			.Seckill h1 { height:30px; background-position:-15px -84px;}
+			.Seckill-main { background:url(../images/index/Seckill_bg.gif) repeat-y; padding:10px;}
+				.Seckill-main li { height:80px;}
+				.Seckill-main li .Name { display:block; height:58px; overflow:hidden;}
+				
+				
+				
+			.Seckill-bottom { height:13px; background-position:-15px -115px;}
+			/*   公告 css   */
+			.Notice { padding-top:5px;}
+			.Notice h1 { height:26px; background-position:-70px -129px; border-bottom:#e2e2e2 solid 1px;}
+				.Notice-main li { border-bottom:#ddd dotted 1px; height:24px; line-height:24px;}
+					.Notice-main li span { display:inline-block;}
+					.Notice-main li img { vertical-align:middle; margin-right:5px;}
+	/*   新品、促销 css   */
+	.new-box { border:#eaeaea solid 10px; margin-top:10px; height:246px;}
+	.new-title { height:26px; background:#eaeaea url(../images/index/bg.gif) no-repeat 0 -156px;}
+	.new-title2 { height:26px; background:#eaeaea url(../images/index/bg.gif) no-repeat 1px -182px;}
+		.new-title li,.new-title2 li { float:left;}
+		.new-title li a,.new-title2 li a { display:block; height:26px; text-indent:-9999px; outline:none; cursor:pointer;}
+		.new-title .Recipes,.new-title2 .Recipes { width:127px;}
+		.new-title .Promotions,.new-title2 .Promotions{ width:164px;}
+	
+	/*   食谱、套餐、产品模块 css   */
+	.products-box { padding-top:10px; clear:left }
+	.products-box h1,.products-box h2,.products-box h3 { height:29px; text-align:right;}
+	.products-box h2 { background-position:0 -28px;}
+	.products-box h3 { background-position:0 -58px;}
+		
+		.products-box h1 a,.products-box h2 a,.products-box h3 a { padding-left:10px;}
+		.products-main { border:#eaeaea solid 10px;}
+
+
+/*   模块3 css   */
+.box-3 { padding-top:15px; width:960px; height:211px; overflow:hidden;}
+	.box-content { float:left; width:354px; padding-right:15px; }
+	.box-content h1,.box-content h2,.Investigation h1 { height:23px; padding-top:8px; border-bottom:#e2e2e2 solid 1px; border-top:#e2e2e2 solid 1px; text-align:right;}
+	.box-content h2 { background-position:0 -31px;}
+	.news-main { padding:10px;}
+		.news-top { height:108px;}
+			.pic { float:left; width:166px; overflow:hidden;}
+				.pic img { display:block;}
+			.txt { float:right; width:158px;}
+				.txt .textTit { height:25px; line-height:25px; overflow:hidden;}
+					.txt .textTit a { color:#17bd0f; font-weight:bold;}
+					.txt .textTit a:visited,.txt h3 a:link { color:#17bd0f;}
+				.txt-main { height:80px; text-indent:24px; overflow:hidden;}
+					.txt-main span { display:block; text-align:right;}
+		.news-bottom { height:40px; padding-top:10px;}
+			.news-bottom li { float:left; width:147px; height:20px; line-height:20px; overflow:hidden; padding:0 10px; background:url(../images/index/liico.gif) no-repeat 0 8px;}
+	/*   客户调查 css   */
+	.Investigation { float:right; width:222px;}
+	.Investigation h1 { background-position:0 -62px;}
+		.Inve-main { padding:10px;}
+		.Inve-main h2 { height:26px; line-height:26px; font-weight:bold;}
+		.Inve-main ul { padding-top:3px;}
+			.Inve-main li { padding-bottom:5px;}
+				.Inve-main li input { vertical-align:middle; margin-right:3px;}
+		.Inve-main .suntj { width:80px; height:22px; background-position:0 -96px; border:0; font-size:12px; font-weight:bold;}
+		
+
+.h_list1{border:#eaeaea solid 10px; padding:0 18px; float:left;  }
+
+.h_list1 ul li{width:154px; padding:10px 9px;}
+
+
+.h_list2{padding:0 18px;}
+.h_list2 ul li{width:154px; padding:10px 9px;}
+
+.h_list3{background:url(../images/index/Seckill_bg.gif) repeat-y; padding:10px; height:80px;}
+.h_list3 li{}
+.h_list3 .d_price{ font-size:12px; font-weight:normal}

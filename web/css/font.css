@@ -1,0 +1,42 @@
+a{ color:#666;text-decoration:none;}
+a:hover { color:#cd2a23; text-decoration:underline;}
+
+.White:visited,.White:link { color:#fff;}
+
+.Green { color:#02a318;}
+.Green:hover { color:#cd2a23; text-decoration:underline;}
+
+.Perse { color:#333;}
+
+.Red { color:#f00;}
+.Red:hover { text-decoration:underline;}
+
+.Red2 { color:#cd2a23;}
+.Red:hover { text-decoration:underline;}
+
+.Red3 { color:#cd2a23; font-weight:bold;}
+
+.Red4 { color:#cd2a23; font-weight:bold; font-size:18px; font-family:Verdana, Geneva, sans-serif;}
+
+.Red5 { color:#cd2a23; font-weight:bold; font-size:14px; font-family:Verdana, Geneva, sans-serif;}
+
+.Blue { color:#315f80}
+.Blue:hover { color:#cd2a23; text-decoration:underline;}
+
+.products-pic { display:block; border:#ccc solid 1px; padding:1px;}
+.products-pic:hover { border:#cd2a23 solid 1px;}
+
+.products-pic2 { float:left; display:block; border:#fff solid 1px;}
+.products-pic2:hover { border:#cd2a23 solid 1px;}
+
+.Small-pic { float:left; display:block; width:87px; height:76px; border:#fff solid 1px; margin-right:10px;}
+.Small-pic:hover { border:#cd2a23 solid 1px;}
+
+.Quite-pic { float:left; display:block; width:110px; height:96px; border:#fff solid 1px; margin-right:10px;}
+.Quite-pic:hover { border:#cd2a23 solid 1px;}
+
+.Similar { width:122px; display:inline-block; height:106px; border:#fff solid 1px;}
+.Similar:hover { border:#cd2a23 solid 1px;}
+
+.weight { font-weight:bold;}
+.Bgreen { color:#017c60;}

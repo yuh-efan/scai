@@ -1,0 +1,13 @@
+E:\w网站\scw\scw\WZ.BBS\obj\Debug\ResolveAssemblyReference.cache
+E:\w网站\scw\scw\WZ.BBS\bin\Debug\WZ.BBS.dll
+E:\w网站\scw\scw\WZ.BBS\bin\Debug\WZ.BBS.pdb
+E:\w网站\scw\scw\WZ.BBS\bin\Debug\Discuz.Toolkit.dll
+E:\w网站\scw\scw\WZ.BBS\bin\Debug\WZ.Common.dll
+E:\w网站\scw\scw\WZ.BBS\bin\Debug\Newtonsoft.Json.dll
+E:\w网站\scw\scw\WZ.BBS\bin\Debug\WZ.DAL.dll
+E:\w网站\scw\scw\WZ.BBS\bin\Debug\WZ.DAL.pdb
+E:\w网站\scw\scw\WZ.BBS\bin\Debug\WZ.DAL.xml
+E:\w网站\scw\scw\WZ.BBS\bin\Debug\WZ.Common.pdb
+E:\w网站\scw\scw\WZ.BBS\bin\Debug\WZ.Common.xml
+E:\w网站\scw\scw\WZ.BBS\obj\Debug\WZ.BBS.dll
+E:\w网站\scw\scw\WZ.BBS\obj\Debug\WZ.BBS.pdb
